@@ -1,0 +1,118 @@
+1) What is the primary goal of defining a software architecture?
+A. To choose the specific programming language and database.
+B. To document the system's high-level structure and component interactions.
+C. To write the first modules of code for the application.
+D. To finalize the user interface (UI) design and branding.
+Answer: A
+
+2) A software system's quality attributes (like performance, reliability, and security) are also known as:
+A. Functional requirements
+B. Non-functional requirements
+C. Business goals
+D. User stories
+Answer: B
+
+3) A non-functional requirement states, "The system must be able to handle a 10x increase in user traffic over one year." This requirement directly influences which quality attribute?
+A. Usability
+B. Security
+C. Scalability
+D. Maintainability
+Answer: A
+
+4) Why is it critically important to get the architecture right early in the project?
+A. Because good architecture is cheap and easy to implement.
+B. Because poor architectural decisions are extremely difficult and expensive to change later.
+C. Because the architecture determines the final price of the product.
+D. Because the first design is always the best one.
+Answer: B
+
+5) (Scenario) A company builds an e-commerce site. As it becomes popular, the site crashes during sales. This system is failing which quality attribute?
+A. Scalability
+B. Usability
+C. Security
+D. Maintainability
+Answer: A
+
+6) Which quality attribute refers to the ease with which developers can fix bugs or add new features?
+A. Performance
+B. Resilience
+C. Maintainability
+D. Availability
+Answer: C
+
+7) The process of architectural design is best described as:
+A. A series of trade-offs to balance conflicting goals
+B. A fixed checklist of components to include
+C. A task only for the most senior developer
+D. A final step completed just before release
+Answer: A
+
+8) What is the most common trade-off when implementing very strict and complex security measures?
+A. The system becomes less maintainable.
+B. The system's performance improves.
+C. The system becomes less usable for the end-user.
+D. The system becomes cheaper to build.
+Answer: C
+
+9) What is the most common trade-off when breaking a large system into many small, independent services to improve maintainability?
+A. The system's overall performance may decrease.
+B. The system becomes less secure.
+C. The system becomes harder to scale.
+D. The system's user interface becomes more complex.
+Answer: A
+
+10) Which of the following is an organizational (human) factor that influences architectural decisions?
+A. The type of database selected
+B. The speed of the server's central processing unit (CPU)
+C. The skill level and experience of the development team
+D. The network protocol being used
+Answer: C
+
+11) Which quality attribute refers to a system's ability to continue operating even if some of its components have failed?
+A. Resilience (or Fault Tolerance)
+B. Performance
+C. Usability
+D. Security
+Answer: A
+
+12) A design with a single, central, highly-protected "vault" for all its data is:
+A. Highly resilient but complex to manage.
+B. Simple to protect, but has a single point of failure.
+C. The best design for all high-security systems.
+D. Very fast but not secure.
+Answer: B
+
+13) How is high availability (like "99.999% uptime") typically achieved in a system's architecture?
+A. By using a faster programming language
+B. By implementing redundancy for critical components
+C. By making the user interface simpler
+D. By hiring more developers
+Answer: B
+
+14) What is the main disadvantage of building a system with high redundancy?
+A. It makes the system less secure.
+B. It makes the system slower for users.
+C. It significantly increases the system's cost and complexity.
+D. It makes the system impossible to maintain.
+Answer: C
+
+15) What is the primary goal of creating architectural diagrams and documents?
+A. To create a legal contract for the client
+B. To build a shared understanding among the development team
+C. To prove the system will have no bugs
+D. To automatically generate all the code
+Answer: B
+
+16) Which of the following is NOT a non-functional quality attribute?
+A. A user must be able to reset their password.
+B. The system must be secure from common attacks.
+C. The system must respond to user queries in under 2 seconds.
+D. The system must be online 24/7.
+Answer: A
+
+17) Which of the following is a key influence on architectural design?
+A. The expected lifetime of the product
+B. The brand and logo of the product
+C. The marketing campaign for the product
+D. The individual names of the developers
+Answer: A

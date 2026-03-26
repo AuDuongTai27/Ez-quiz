@@ -1,0 +1,83 @@
+1) Which of the following lists the main phases of Requirement Engineering (RE) in order?
+A. Specification → Validation → Elicitation → Management
+B. Elicitation → Analysis → Specification → Validation → Management
+C. Analysis → Elicitation → Validation → Specification
+D. Planning → Implementation → Testing
+Answer: B
+
+2) The goal of the elicitation phase is to:
+A. Code the software
+B. Identify and gather stakeholder needs
+C. Write test scripts
+D. Produce user manuals
+Answer: B
+
+3) Which technique is commonly used during requirement elicitation?
+A. Unit testing
+B. Interviews
+C. System integration
+D. Debugging
+Answer: B
+
+4) What is a common challenge in elicitation?
+A. Stakeholders rarely provide conflicting requirements.
+B. Users easily express all their needs.
+C. Hidden assumptions and vague goals
+D. Developers don’t participate.
+Answer: C
+
+5) The analysis phase focuses on:
+A. Writing final code
+B. Resolving requirement conflicts and prioritizing needs
+C. Conducting security audits
+D. Defining test metrics
+Answer: B
+
+6) The MoSCoW (Must, Should, Could, Won't) method is used for:
+A. Designing the user interface (UI)
+B. Requirement prioritization
+C. Project budgeting
+D. Team scheduling
+Answer: B
+
+7) The output of the specification phase is typically a:
+A. Source code file
+B. Software Requirements Specification (SRS)
+C. Unified Modeling Language (UML) activity diagram
+D. Test execution plan
+Answer: B
+
+8) Requirement validation ensures that requirements are:
+A. Implemented efficiently
+B. Correct, complete, consistent, and feasible
+C. Prioritized by management only
+D. Frozen after documentation
+Answer: B
+
+9) Which method can be used to validate requirements?
+A. Unit tests
+B. Walkthroughs and reviews
+C. Deployment reports
+D. Database normalization
+Answer: B
+
+10) Requirement management is necessary because:
+A. Requirements never change
+B. It handles updates, traceability, and version control
+C. It only tracks test cases
+D. It focuses on team structure
+Answer: B
+
+11) What tool could support requirement management?
+A. Visual Studio Code
+B. Jira or ReqView
+C. MySQL
+D. Git Bash
+Answer: B
+
+12) In Agile methods, Requirement Engineering is:
+A. Done once before coding
+B. Continuous through backlog refinement and iteration
+C. Skipped entirely
+D. Done after deployment
+Answer: B

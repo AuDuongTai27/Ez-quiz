@@ -1,0 +1,104 @@
+1) What is the primary goal of functional testing?
+A. To ensure the code is easy to read and maintain.
+B. To check if users find the product useful and easy to use.
+C. To test the system's response time under a heavy user load.
+D. To find bugs and provide evidence that the system is fit for its purpose.
+Answer: D
+
+2) Which sequence correctly orders the stages of functional testing, from the smallest component to the complete system?
+A. System testing → Feature testing → Unit testing → Release testing
+B. Unit testing → System testing → Feature testing → Release testing
+C. Unit testing → Feature testing → System testing → Release testing
+D. Feature testing → Unit testing → Release testing → System testing
+Answer: C
+
+3) What is the main objective of unit testing?
+A. To test that a complete user feature works as intended.
+B. To decide if the software is good enough for customers.
+C. To test program units, like functions or methods, in isolation.
+D. To test the interactions between multiple system features.
+Answer: C
+
+4) In the context of unit testing, which of the following best defines a "code unit"?
+A. The entire software product.
+B. A single line of code written by a developer.
+C. A specific feature requested by a user.
+D. Anything with a clearly defined responsibility, like a function or class method.
+Answer: D
+
+5) What is the fundamental principle behind using equivalence partitions to design tests?
+A. To divide the code into equal parts for different testers to work on.
+B. To group inputs that are treated similarly by the code, so that one test can represent the entire group.
+C. To focus exclusively on inputs that are known to have caused errors in the past.
+D. To test every single possible input to guarantee the program is completely free of faults.
+Answer: B
+
+6) When designing unit tests, why is it important to also identify "incorrectness partitions"?
+A. To test that the program correctly detects and handles invalid inputs as expected.
+B. To make the overall test suite smaller and faster to run.
+C. To prove that the program will never fail under any circumstances.
+D. To avoid testing edge cases that are unlikely to occur in production.
+Answer: A
+
+7) Feature testing is primarily concerned with which aspect of software development?
+A. Verifying that individual functions work correctly in isolation.
+B. Ensuring that integrated code units work together to provide useful functionality.
+C. Checking the system's performance and stability under heavy load.
+D. Finding security vulnerabilities that an attacker might be able to exploit.
+Answer: B
+
+8) Feature testing involves two types of tests: "interaction tests" and "usefulness tests." What is the main goal of usefulness tests?
+A. To check for bugs in how different code units are integrated.
+B. To verify that the feature implements something that users actually want or need.
+C. To ensure the feature's code is optimized for maximum speed.
+D. To confirm that all individual code units passed their own tests.
+Answer: B
+
+9) How are user stories often utilized in the feature testing process?
+A. They are converted directly into the final user documentation.
+B. They are used only for high-level system testing, not feature testing.
+C. They serve as a basis for organizing tests to ensure the feature aligns with real-world user scenarios.
+D. They are used by marketing teams to create advertisements for the product.
+Answer: C
+
+10) A primary goal of system testing, which is not typically covered in unit or feature testing, is to:
+A. test a single function to verify its return value.
+B. discover unexpected and unwanted interactions between different system features.
+C. check the code for proper syntax and adherence to style guides.
+D. verify the logic of an individual class method in isolation.
+Answer: B
+
+11) Beyond checking for feature interactions, what is another crucial objective of system testing?
+A. Ensuring every single line of code has been executed at least once.
+B. Confirming that the development team has met its deadline.
+C. Verifying that the system operates correctly in the different environments where it will be used.
+D. Making sure each developer has written enough unit tests for their code.
+Answer: C
+
+12) According to the provided text, what is an effective way to systematically conduct system testing?
+A. By having the original programmer test their own code without guidance.
+B. By starting with a set of scenarios describing possible user tasks and working through them.
+C. By focusing only on the newest features that have been recently added.
+D. By randomly clicking buttons and entering data to try to crash the system.
+Answer: B
+
+13) What is a key distinction between release testing and system testing?
+A. Release testing is automated, while system testing is always manual.
+B. Release testing focuses on finding every possible bug, while system testing focuses on performance.
+C. System testing is done in a test environment, while release testing is done in the real operational environment.
+D. System testing is performed by end-users, while release testing is performed by developers.
+Answer: C
+
+14) The main purpose of release testing is to:
+A. find and fix every remaining bug in the software.
+B. provide developers with feedback on code quality.
+C. decide if the system is good enough to be released to customers.
+D. test each new feature as soon as it is developed.
+Answer: C
+
+15) At which stage of functional testing would a developer specifically check that several code units, possibly created by different programmers, are correctly integrated to deliver a single piece of user functionality?
+A. Unit testing
+B. Feature testing
+C. System testing
+D. Release testing
+Answer: B

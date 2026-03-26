@@ -1,0 +1,69 @@
+1) What is the "DevOps" approach to service management?
+A. A separate "operations" team is responsible for deploying and managing all services created by the "development" team.
+B. The development team is responsible for deployment and service management as well as software development.
+C. It is an approach where all development and operations are outsourced to a third-party vendor.
+D. It is a set of tools used to automate only the testing, but not the deployment, of services.
+Answer: B
+
+2) What is the core principle of "continuous deployment"?
+A. New versions of the software are bundled and released periodically, typically three or four times per year.
+B. As soon as a change to a service has been made and validated, the modified service is automatically re-deployed into production.
+C. Developers are responsible for manually deploying their own services after getting approval from the operations team.
+D. All microservices in the system must be deployed at the same time to ensure compatibility.
+Answer: B
+
+3) According to the continuous deployment pipeline diagram, what event triggers the start of the automated process?
+A. A service monitoring system detects a performance failure.
+B. A user submits a new feature request to the development team.
+C. A programmer commits a code change to the version management system (e.g., Git).
+D. The team manager approves the deployment in a weekly planning meeting.
+Answer: C
+
+4) In the continuous deployment pipeline, what is the primary purpose of a "container" (e.g., Docker)?
+A. To act as a virtual server that includes a full operating system.
+B. To be a virtualized environment (deployment unit) that includes all the software and dependencies that a service needs to run.
+C. To run the automated unit tests before building the system.
+D. To monitor the service for failures after it has been deployed.
+Answer: B
+
+5) What is the role of a container management system like Kubernetes?
+A. It is a version control system used to store the source code for a service.
+B. It is a tool for writing and running automated unit tests.
+C. It automates container deployment and management, handling scheduling, load balancing, and service discovery.
+D. It is a type of Application Programming Interface (API) gateway used to route traffic to different service versions.
+Answer: C
+
+6) In the continuous deployment pipeline, which automated tests are run after the service is containerized and deployed?
+A. Unit tests
+B. Integration tests
+C. Acceptance tests
+D. All of the above
+Answer: D
+
+7) How can a system using an Application Programming Interface (API) gateway safely manage a "rollback" if a newly deployed service version fails?
+A. The API gateway automatically deletes the failed service container and rebuilds the old one from source code.
+B. The system maintains the old version, and if the monitor detects a problem, it simply switches the "current version link" back to the older service.
+C. All client applications are forced to update their URIs to point to the older service version.
+D. The system blocks all new requests, forcing them to time out until a developer manually fixes the bug in the new version.
+Answer: B
+
+8) When a service's API must change, how can the system support both old and new clients?
+A. By forcing all client services to update at the exact same time.
+B. By including the version number as part of the resource's Uniform Resource Identifier (URI).
+C. By deploying the new service on a completely different server domain.
+D. By using a "compensating transaction" to automatically translate new API calls to the old format.
+Answer: B
+
+9) What is the purpose of a numbering convention like changing a service version from 001 to 101?
+A. To indicate a minor bug fix that does not change the API.
+B. To signal to the API gateway that this service should be deployed in a container.
+C. To identify whether a new version has introduced an API change.
+D. To show that the service is now managed by a different development team.
+Answer: C
+
+10) According to the text, what is a primary risk of deploying new software services that testing can never completely eliminate?
+A. The cost of the cloud servers will increase.
+B. Unanticipated problems will be caused by the interactions between the new version and existing services.
+C. The service's source code will be stolen during deployment.
+D. The service will be deployed using the wrong programming language.
+Answer: B

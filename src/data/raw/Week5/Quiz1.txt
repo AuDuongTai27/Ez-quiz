@@ -1,0 +1,76 @@
+1) Why is it beneficial for services in a cloud-based system to be stateless?
+A. Stateless services are easier to program and require less code.
+B. They can be easily replicated, run in parallel, and moved between virtual servers to handle scaling.
+C. They are the only type of service that can communicate using Extensible Markup Language (XML)-based protocols.
+D. They maintain a persistent, in-memory copy of the user's session, which improves performance.
+Answer: B
+
+2) What was a significant problem with the "Web Services" standards (e.g., Simple Object Access Protocol (SOAP), Web Services Description Language (WSDL)) from the early 2000s?
+A. They were too simple and did not support complex business logic.
+B. They could only be written in one programming language.
+C. They involved large, complex Extensible Markup Language (XML) messages that were slow to analyze and had high overhead.
+D. They did not have a standard for interface description.
+Answer: C
+
+3) What key insight, pioneered by companies like Amazon, helped define the modern microservice?
+A. Services should be completely independent, with their own database and their own user interface.
+B. All services in a system should share a single, highly optimized database to reduce complexity.
+C. Services should focus only on technical tasks, while a central monolith handles all business logic.
+D. A service should be related to multiple business functions to be efficient.
+Answer: A
+
+4) Which of the following describes the ideal design goal for microservices?
+A. High coupling and high cohesion
+B. Low coupling and low cohesion
+C. High coupling and low cohesion
+D. Low coupling and high cohesion
+Answer: D
+
+5) Why is low coupling an important characteristic for microservices?
+A. It ensures that all services can be written in the same programming language.
+B. It allows you to update a service (while maintaining its interface) without having to change other services in the system.
+C. It minimizes the number of functions inside a single service, making the code simpler.
+D. It forces all services to share a single, common database, which simplifies data management.
+Answer: B
+
+6) When determining the appropriate "size" for a microservice, what guideline does the author suggest?
+A. The service's code should not exceed a strict limit, such as 500 lines of code.
+B. The service should be small enough to be developed, tested, and deployed by a team in two weeks or less.
+C. The service must encapsulate at least five related business functions to be considered a "microservice."
+D. The service should be large enough to handle a complete, end-to-end business workflow (e.g., user registration).
+Answer: B
+
+7) What is the "common closure principle" guideline for decomposing a system?
+A. All services that are part of the same business capability should be grouped together.
+B. Elements of a system that are likely to be changed at the same time should be located within the same service.
+C. All services should be "closed" for modification but "open" for extension.
+D. Services should be decomposed based on the data they manage, not their function.
+Answer: B
+
+8) What is the "orchestration" approach to service coordination?
+A. Services communicate by publishing events that other services subscribe to, with no central controller.
+B. A separate controller service (the "conductor") executes the workflow by calling component services in a specific order.
+C. All services share a central database, which orchestrates the workflow using Atomicity, Consistency, Isolation, Durability (ACID) transactions.
+D. Services directly call each other in a peer-to-peer mesh, negotiating the workflow steps as they go.
+Answer: B
+
+9) What is a "compensating transaction"?
+A. A transaction that bundles all data updates into a single unit to guarantee consistency.
+B. A transaction that reverses a previous operation when a failure is detected in a dependent service.
+C. A log of all pending updates used to ensure "eventual consistency" between service replicas.
+D. A special transaction used by a circuit breaker to test if a failed service has recovered.
+Answer: B
+
+10) How does the "choreography" approach to service coordination work?
+A. A central controller dictates the exact order of operations for all services.
+B. Each service emits an event to indicate it has completed processing, and other services react to those events.
+C. The Application Programming Interface (API) gateway is responsible for coordinating all service workflows.
+D. Services use synchronous, direct calls to coordinate their actions in real-time.
+Answer: B
+
+11) Why is the "circuit breaker" pattern often preferred over simple timeouts for managing external service failures?
+A. A circuit breaker encrypts the service request, making it more secure.
+B. A circuit breaker immediately denies access to a failed service without waiting for the timeout, preventing system slowdown.
+C. A circuit breaker automatically retries the request dozens of times until the service responds.
+D. A circuit breaker automatically scales up a new instance of the failed service.
+Answer: B

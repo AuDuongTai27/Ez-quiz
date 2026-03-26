@@ -1,0 +1,69 @@
+1) What is the primary definition of a code review?
+A. An automated process that scans code for performance issues.
+B. A formal meeting where project managers approve code for deployment.
+C. A systematic, peer-evaluation process where developers check each other's code for correctness and quality.
+D. The act of a single developer re-reading their own code before submitting it.
+Answer: C
+
+2) Why are code reviews a critical complement to automated testing?
+A. They are much faster than running a full suite of automated tests.
+B. They can find bugs caused by a misunderstanding of requirements, which automated tests would likely miss.
+C. They focus only on the visual aspects of the user interface.
+D. They completely eliminate the need for any further testing.
+Answer: B
+
+3) Besides finding bugs, what is another significant benefit of conducting regular code reviews?
+A. It helps determine which developer writes the fewest bugs.
+B. It serves as the primary way to calculate project costs.
+C. It is an excellent method for sharing knowledge about the codebase across the team.
+D. It is a substitute for writing technical documentation.
+Answer: C
+
+4) Which of the following issues is most effectively identified through a code review rather than by running functional tests?
+A. A calculation that produces an incorrect numerical result.
+B. A part of the program that crashes when given a null input.
+C. Code that is poorly organized and difficult to understand, even if it works correctly.
+D. A feature that doesn't meet its required response time under load.
+Answer: C
+
+5) According to the course materials, what should a reviewer examine in addition to the program code being reviewed?
+A. The developer's previous performance reports.
+B. The project's marketing and sales strategy.
+C. The automated tests written for the code to ensure they are complete and correct.
+D. The time it took the programmer to write the code.
+Answer: C
+
+6) What kind of culture should be fostered for code reviews to be successful?
+A. A highly competitive one, where reviewers try to find the most flaws to prove their expertise.
+B. A culture where reviews are seen as a way to formally evaluate and rank programmers.
+C. A positive and collaborative one, where the goal is to improve the code, not to criticize the programmer.
+D. A culture where programmers are expected to reject all feedback to show confidence in their work.
+Answer: C
+
+7) Which of the following is listed as a key area to look for in a code review checklist?
+A. The number of lines of code written.
+B. The time spent on the task.
+C. The correctness of the code and whether it handles edge cases.
+D. The programming language used.
+Answer: C
+
+8) What is the recommended best practice for the scope of a single code review session?
+A. To cover as much code as possible in a single day.
+B. To focus on a manageable amount of code (e.g., 200-400 lines) in a session lasting about an hour.
+C. To only review code written by senior developers.
+D. To continue the review until every participant agrees the code is perfect.
+Answer: B
+
+9) Modern code review tools often integrate with code repositories like Github. What is the primary benefit of this integration?
+A. It allows the tool to automatically fix all identified bugs.
+B. It can automatically set up a code review whenever a programmer submits new code.
+C. It prevents programmers from submitting code that contains any bugs.
+D. It replaces the need for any human involvement in the review process.
+Answer: B
+
+10) Why is a checklist a useful tool for a code reviewer?
+A. It helps the reviewer remember to check for common types of errors and ensures consistency.
+B. It serves as a legally binding contract between the programmer and the reviewer.
+C. It automatically scores the quality of the code on a scale of 1 to 10.
+D. It provides the exact code changes that need to be made.
+Answer: A

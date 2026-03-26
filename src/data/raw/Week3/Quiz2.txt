@@ -1,0 +1,55 @@
+1) Besides preventing security attacks, what is a key reliability reason for input validation?
+A. To prevent "database pollution" from accidentally incorrect data.
+B. To make the user interface load faster.
+C. To reduce the program's memory usage.
+D. To ensure all inputs are stored in a single format.
+Answer: A
+
+2) What is the "whitelisting" approach to input validation?
+A. Defining a set of rules for what is not allowed (e.g., <script>).
+B. Defining a set of rules for what is allowed, and rejecting everything else.
+C. A list of users who are allowed to use the system.
+D. Allowing all inputs except those from a known bad Internet Protocol (IP) address.
+Answer: B
+
+3) Why is whitelisting generally considered a more secure strategy than blacklisting?
+A. Blacklisting is much harder to program.
+B. Whitelisting runs faster.
+C. Attackers can often find new ways to bypass a blacklist, but it's much harder to bypass a strict whitelist.
+D. Whitelisting can be performed on the client-side, while blacklisting cannot.
+Answer: C
+
+4) A web form uses JavaScript to check if an email is valid before the user clicks "submit." This is...
+A. ...all the validation that is needed for a secure application.
+B. ...a form of server-side validation.
+C. ...good for user experience, but insufficient for security.
+D. ...a bad practice that slows down the user's browser.
+Answer: C
+
+5) For security and data integrity, where must validation always be performed?
+A. On the client-side (in the browser).
+B. On the server-side.
+C. In the database, using triggers.
+D. In a separate, dedicated validation microservice.
+Answer: B
+
+6) What is a "regular expression" (regex) commonly used for in validation?
+A. Encrypting the user's input before storing it.
+B. Defining a pattern (e.g., for an email or phone number) that an input string must match.
+C. Handling program crashes from bad input.
+D. Refactoring complex code.
+Answer: B
+
+7) Why is it important to check that a numeric input (like 'age') is not an impossibly large number?
+A. It wastes database storage space.
+B. It is hard for humans to read.
+C. It can cause a numeric overflow exception and crash the program.
+D. It makes sorting the numbers very slow.
+Answer: C
+
+8) In many regex dialects, what does the $ (dollar sign) symbol mean when used at the end of an expression?
+A. The match must end at the end of the string.
+B. The previous character is optional.
+C. It matches a literal dollar sign.
+D. It matches any single number.
+Answer: A

@@ -1,0 +1,139 @@
+1) When creating a persona to represent a product user, what is the primary purpose of including personal details like a name, age, and photograph?
+A. To ensure the development team can perform a background check on the user type.
+B. To create a realistic character that helps the team empathize with the user ("step into their shoes").
+C. To meet the legal requirements for user documentation.
+D. To define the specific salary bracket for pricing the software.
+Answer: B
+
+2) Which of the following is the most effective element to include in a persona description to help developers judge user interface (UI) complexity?
+A. The user's long-term life goals (e.g., "wants to retire early").
+B. The user's educational background and technical skill level.
+C. The user's favorite color scheme.
+D. The user's manager's name.
+Answer: B
+
+3) Why is it generally advised to avoid focusing on "user goals" (e.g., "career progression") when writing personas?
+A. Users never have goals when using software.
+B. Goals are too broad and often do not directly relate to why a user needs a specific piece of software to get through their day.
+C. Goals are always financial and irrelevant to functionality.
+D. It is impossible to write a goal in less than three paragraphs.
+Answer: B
+
+4) You are developing a new product and have very little data. You create "proto-personas" based on the team's best guesses. What is the limitation of this approach?
+A. They are too detailed to be useful.
+B. They cannot be used to write scenarios.
+C. They are not as accurate as those based on user research, though they still provide a shared team vision.
+D. They require legal approval before use.
+Answer: C
+
+5) How many personas should you typically create to identify the key features of a system effectively?
+A. One for every potential user of the system.
+B. At least 20 to cover every possible demographic.
+C. A small number (e.g., up to 5) to avoid overlapping requirements and confusion.
+D. Only one "average" persona.
+Answer: C
+
+6) Which of the following best describes the correct "level of detail" for a starting scenario?
+A. A strict, step-by-step list of every mouse click and keystroke.
+B. A high-level narrative describing a user's problem and an imagined solution without technical specification.
+C. A complete code-level specification of the feature.
+D. A vague statement saying "the user solves the problem" with no description of how.
+Answer: B
+
+7) When writing a scenario, why might you include specific technical details (like "Log in with Google") rather than a generic phrase (like "User performs authentication")?
+A. Because generic phrases can be confusing, while specific examples are often easier for users and developers to understand.
+B. Because you are required to use Google products.
+C. Because the code has already been written.
+D. Because scenarios must always dictate the final implementation database.
+Answer: A
+
+8) What is the primary advantage of using a "narrative" style (natural language) for scenarios over a "structured" style (fields and flowcharts)?
+A. Narrative scenarios are machine-readable.
+B. Narrative scenarios are accessible and understandable to non-technical users and stakeholders.
+C. Structured scenarios are too short.
+D. Narrative scenarios are legally binding contracts.
+Answer: B
+
+9) Which action should you take to identify software features from a written scenario?
+A. Count the number of adjectives used.
+B. Highlight the "active verbs" (actions) in the text to see what the user is doing (e.g., "upload," "share").
+C. Rewrite the scenario in a different language.
+D. Remove all references to the persona.
+Answer: B
+
+10) A scenario describes a teacher using a tool to organize a class trip. What represents the "Problem" element of this scenario?
+A. The teacher logs in.
+B. The teacher wants to share photos but needs to ensure student privacy and copyright compliance.
+C. The teacher has a degree in History.
+D. The system sends an email.
+Answer: B
+
+11) Scenarios are described as "tools for thinking." What does this imply about their completeness?
+A. They must cover every single edge case and error state.
+B. They must be perfect before any coding begins.
+C. They do not have to be complete or consistent; their job is to stimulate design creativity.
+D. They replace the need for testing.
+Answer: C
+
+12) Which of the following follows the standard format of a User Story?
+A. "The system shall allow the user to print documents."
+B. "As a <role>, I want to <do something>, so that <reason>."
+C. "Clicking the blue button saves the file to the cloud."
+D. "Jack, aged 32, needs a way to save time."
+Answer: B
+
+13) What is the main purpose of the "So that..." clause (the rationale) in a User Story?
+A. To increase the word count of the documentation.
+B. To help developers understand why a feature is needed, potentially triggering alternative ideas for implementation.
+C. To tell the user how to perform the task.
+D. To assign the task to a specific developer.
+Answer: B
+
+14) You have a User Story that says: "As a system manager, I need to back up the entire system and restore files." This story is very complex and will take weeks to build. What is this called?
+A. A Bug.
+B. An Epic.
+C. A Persona.
+D. A Scenario.
+Answer: B
+
+15) Why should you generally avoid writing "negative" user stories (e.g., "As a user, I don't want...") for a product backlog?
+A. It is impossible to write system tests that demonstrate a negative (that something didn't happen).
+B. Agile methodologies forbid negative language.
+C. Developers prefer positive reinforcement.
+D. Negative stories are too short.
+Answer: A
+
+16) How do User Stories differ from Scenarios regarding "context"?
+A. Stories provide more context than scenarios.
+B. Scenarios provide rich context about normal work and goals, while stories are finer-grain statements of a single need.
+C. Stories and scenarios are identical in context.
+D. Stories describe the user's background; scenarios describe the system's code.
+Answer: B
+
+17) What is the correct chronological flow when using these techniques to design a product?
+A. Features -> Personas -> Scenarios -> Stories
+B. Personas -> Scenarios -> Stories -> Features
+C. Stories -> Personas -> Features -> Scenarios
+D. Scenarios -> Features -> Personas -> Stories
+Answer: B
+
+18) You are analyzing a scenario where a teacher "creates a group web page." Which specific artifact would you write to help plan the implementation of this specific action?
+A. A new Persona for the web page.
+B. A User Story (e.g., "As a teacher, I want to create a web page...").
+C. A marketing plan.
+D. A new Scenario about the web page.
+Answer: B
+
+19) When identifying features from scenarios, you notice a user needs to "log in" in three different scenarios. What feature design principle suggests you should create one single "Authentication" feature rather than three separate ones?
+A. Coherence (The feature should be linked to a single item of functionality).
+B. Novelty (The feature should be new).
+C. Complexity (The feature should be difficult).
+D. Independence (The feature should not work with others).
+Answer: A
+
+20) If you are writing a User Story based on a scenario where a user needs to ensure their data isn't shared, how should you rephrase the negative constraint "I don't want my data shared"?
+A. "As a user, I want to control the information transmitted to external servers so I can ensure privacy."
+B. "As a user, I want to ban all data sharing."
+C. "As a user, I don't want the system to work."
+D. "As a user, I want to delete the application."
+Answer: A

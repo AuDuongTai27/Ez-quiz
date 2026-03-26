@@ -1,0 +1,3746 @@
+[
+  {
+    "id": "Week1_Quiz1_q1",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "Which sequence correctly describes the flow of changes from your local edits to the remote server in Git?",
+    "options": [
+      "A. Working Directory → Local Commits → Staging Area → Remote",
+      "B. Staging Area → Working Directory → Remote → Local Commits",
+      "C. Working Directory → Staging Area → Local Commits → Remote",
+      "D. Local Commits → Remote → Staging Area → Working Directory"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week1_Quiz1_q2",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "Starting a New Local Project",
+    "options": [
+      "A. git clone project-alpha",
+      "B. git init",
+      "C. git remote add origin ...",
+      "D. git commit"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz1_q3",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "Ignoring Generated Files",
+    "options": [
+      "A. Run git clean -fd before every commit.",
+      "B. Add the lines *.log and /dist to a .gitignore file.",
+      "C. Manually delete the files before running git add.",
+      "D. Use git update-index --assume-unchanged on the files."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz1_q4",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "What is the primary function of a .gitignore file?",
+    "options": [
+      "A. To list files that Git should permanently delete from the project history.",
+      "B. To specify files and directories that Git should intentionally not track, such as build artifacts or local environment files.",
+      "C. To highlight important files that must be included in every commit.",
+      "D. To configure the global settings for your Git installation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz1_q5",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "The Accidental add",
+    "options": [
+      "A. git rm --cached secrets.env",
+      "B. git reset secrets.env or git restore --staged secrets.env",
+      "C. git checkout -- secrets.env",
+      "D. Delete the file and then restore it from the last commit."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz1_q6",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "What is the most significant advantage of using branches in your development workflow?",
+    "options": [
+      "A. They create secure, encrypted copies of your codebase.",
+      "B. They reduce the amount of disk space a repository uses.",
+      "C. They allow you to work on new features or fixes in isolation without disrupting the stability of the main codebase.",
+      "D. They automatically resolve merge conflicts between different developers."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week1_Quiz1_q7",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "A Forgotten File",
+    "options": [
+      "A. Create a new commit with the message \"fix: Add missing Cascading Style Sheets (CSS)\".",
+      "B. Use git reset --hard HEAD~1 (HEAD is the current commit pointer) and then re-commit both files.",
+      "C. Use git add style.css and then git commit --amend.",
+      "D. Use git revert HEAD to undo the commit and start over."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week1_Quiz1_q8",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "What is the key difference between the git fetch and git pull commands?",
+    "options": [
+      "A. git fetch uploads your changes, while git pull downloads them.",
+      "B. git pull is an older, deprecated command, whereas git fetch is the modern replacement.",
+      "C. git fetch only works for the main branch, while git pull works for all branches.",
+      "D. git fetch downloads remote updates but does not merge them, while git pull downloads and merges them into your current branch."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week1_Quiz1_q9",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "Which of the following best describes the \"Feature branch + Pull Request\" collaboration workflow?",
+    "options": [
+      "A. All developers commit their changes directly to the main branch.",
+      "B. Work is done on a separate branch, pushed to the remote, and then a request is opened for code review before merging.",
+      "C. A single, long-running branch is used for development, staging, and production environments.",
+      "D. Developers frequently merge small, unreviewed changes to the main branch throughout the day."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz1_q10",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "Resolving a Merge Conflict",
+    "options": [
+      "A. git commit and then git merge --continue",
+      "B. git add <conflicted_file> and then git merge --continue",
+      "C. git rebase --continue",
+      "D. git status and then git commit"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz1_q11",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "What is the recommended strategy for avoiding merge conflicts on a long-running feature branch?",
+    "options": [
+      "A. Push the branch to the remote only when the feature is completely finished.",
+      "B. Frequently merge or rebase the main branch into your feature branch to stay up-to-date.",
+      "C. Avoid pulling any changes from the main branch until you are ready to merge.",
+      "D. Delete and recreate the branch from main whenever a major change happens on main."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz1_q12",
+    "week": "Week1",
+    "quiz": "Quiz1",
+    "question": "Staying Synced with an Upstream Fork",
+    "options": [
+      "A. Re-clone the original repository every day.",
+      "B. Manually copy-paste changes from the original project's website.",
+      "C. Add the original project's Uniform Resource Locator (URL) as a remote named upstream.",
+      "D. Push his changes directly to the original repository's main branch."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week1_Quiz2_q1",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "In which scenario is git revert the most appropriate command to use?",
+    "options": [
+      "A. When you want to undo a commit that has already been pushed to a shared branch without rewriting history.",
+      "B. When you want to fix a typo in the message of your most recent, un-pushed commit.",
+      "C. When you need to combine the last three commits on your local branch into a single commit.",
+      "D. When you want to discard all changes in your working directory and staging area."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week1_Quiz2_q2",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "What is the primary function of the git reflog command?",
+    "options": [
+      "A. To list all the remote repositories configured for the project.",
+      "B. To provide a log of where your HEAD (current commit pointer) and branch pointers have been, acting as a safety net to recover \"lost\" work.",
+      "C. To show the commit history in a graphical format.",
+      "D. To delete old commit references to save space."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q3",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "Bob is in the middle of developing a complex new feature. Suddenly, a critical bug is reported in production. Bob needs to fix the bug immediately, but his current work is unfinished and not ready to be committed. What should Bob do to safely set aside his current work so he can switch branches?",
+    "options": [
+      "A. Run git commit -m \"Work In Progress (WIP)\" to save the unfinished work.",
+      "B. Run git stash to temporarily shelve his changes.",
+      "C. Run git reset --hard to discard his current work.",
+      "D. Run git clean -fd to remove all untracked files."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q4",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "When is the git stash command most useful?",
+    "options": [
+      "A. When you want to permanently save a version of your code as an official release.",
+      "B. When you need to switch to another branch but have unfinished work you aren't ready to commit.",
+      "C. When you want to delete all untracked files from your working directory.",
+      "D. When you have finished your work and are ready to push it to the remote repository."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q5",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "Frank has finished a feature on his branch. The history contains 10 small, messy commits like \"fix typo,\" \"wip,\" and \"try another thing.\" Before opening a Pull Request (PR), he wants to combine them into two meaningful commits to make the history easier to review. Which command should he use?",
+    "options": [
+      "A. git merge --squash main",
+      "B. git rebase -i HEAD~10",
+      "C. git commit --amend for each of the 10 commits.",
+      "D. git filter-branch"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q6",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "Isabella has modified three files but has not staged them yet. She wants to see a line-by-line view of all the changes she has made in her working directory compared to the last commit. Which command will show her this?",
+    "options": [
+      "A. git status",
+      "B. git log -p",
+      "C. git diff",
+      "D. git diff --staged"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week1_Quiz2_q7",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "What information does the git blame command provide for a specific file?",
+    "options": [
+      "A. It shows which developer is responsible for the most bugs in that file.",
+      "B. It provides a line-by-line breakdown of who last changed each line and in which commit.",
+      "C. It displays a summary of all merge conflicts that have occurred in the file's history.",
+      "D. It generates a report detailing the file's overall change history and size over time."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q8",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "A feature that was working in last month's release (tagged v1.5.0) is now broken on the main branch. David needs to find the exact commit that introduced this regression among the dozens of commits made since the release. What is the most efficient Git tool for this task?",
+    "options": [
+      "A. git blame <file>",
+      "B. git log -p",
+      "C. git bisect",
+      "D. git show <commit>"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week1_Quiz2_q9",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "Liam's team is ready to deploy version 2.0.0. The final commit is on main. He needs to create a permanent, formal marker for this specific commit that includes a message about the release. What should he use?",
+    "options": [
+      "A. git branch v2.0.0",
+      "B. git tag -a v2.0.0 -m \"Version 2.0.0 release\"",
+      "C. git commit --allow-empty -m \"Release v2.0.0\"",
+      "D. git note add -m \"v2.0.0\""
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q10",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "Maria is trying to add a 500MB machine learning model file (model.h5) to her project. Her team uses Git Large File Storage (LFS). What is the correct procedure for her to add this file?",
+    "options": [
+      "A. Add model.h5 to .gitignore to keep the repo small.",
+      "B. Run git lfs track \"*.h5\", then git add .gitattributes model.h5.",
+      "C. Commit the file normally; Git will handle it automatically.",
+      "D. Zip the file and then commit the .zip archive."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q11",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "How does Git Large File Storage (LFS) help manage large binary files?",
+    "options": [
+      "A. It prevents any file larger than 100MB from being committed to the repository.",
+      "B. It stores the content of large files on an external server, placing only lightweight pointers in the Git history.",
+      "C. It automatically compresses binary files into a more efficient format.",
+      "D. It converts binary files into a text-based format so they can be diffed easily."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week1_Quiz2_q12",
+    "week": "Week1",
+    "quiz": "Quiz2",
+    "question": "Olivia wants to see a compact, graphical view of the commit history from all branches, not just her current one. What is the best command to get this rich, condensed overview?",
+    "options": [
+      "A. git log -p --all",
+      "B. git shortlog --summary",
+      "C. git log --oneline --graph --decorate --all",
+      "D. git log --simplify-by-decoration"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz1_q1",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "What is the primary goal of software testing?",
+    "options": [
+      "A. To prove that the software has no bugs.",
+      "B. To write as many test cases as possible.",
+      "C. To execute a program with the intent of finding errors.",
+      "D. To speed up the development process."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz1_q2",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "Which of the following best describes an \"understanding error\"?",
+    "options": [
+      "A. A developer makes a mistake with the upper bound of a loop, causing an \"off-by-1\" error.",
+      "B. A developer misunderstands the requirements and doesn't handle an unexpected data format.",
+      "C. A developer forgets to close a database connection, causing a performance issue.",
+      "D. A developer uses an inefficient algorithm that slows down the program."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz1_q3",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "Which type of testing is primarily concerned with whether the software works quickly and can handle the expected user load?",
+    "options": [
+      "A. Functional Testing",
+      "B. User Testing",
+      "C. Performance and Load Testing",
+      "D. Security Testing"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz1_q4",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "A company asks a group of its own developers and a few select users to test an early version of a product to get feedback on planned features. What is this process called?",
+    "options": [
+      "A. Beta Testing",
+      "B. Release Testing",
+      "C. Alpha Testing",
+      "D. Unit Testing"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz1_q5",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "What is the fundamental limitation of software testing?",
+    "options": [
+      "A. It is too expensive and time-consuming for most projects.",
+      "B. It can only be performed by specialized quality assurance engineers.",
+      "C. It requires complex tools that are difficult to learn.",
+      "D. It can demonstrate the presence of faults, but cannot prove their absence."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week2_Quiz1_q6",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "A test is considered to \"pass\" under which condition?",
+    "options": [
+      "A. The program runs without crashing.",
+      "B. The program's behavior matches the expected behavior.",
+      "C. The program executes all lines of code at least once.",
+      "D. The program is approved by the product manager."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz1_q7",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "A developer creating a program to process a sequence of items makes a mistake and fails to process the very last element. This is a classic example of what?",
+    "options": [
+      "A. An understanding error",
+      "B. A requirements error",
+      "C. An \"off-by-one\" programming error",
+      "D. A system integration error"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz1_q8",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "Which type of testing focuses on validating the functionality of the overall system and discovering as many implementation bugs as possible?",
+    "options": [
+      "A. User Testing",
+      "B. Functional Testing",
+      "C. Performance Testing",
+      "D. Security Testing"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz1_q9",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "The goal of which testing type is to ensure the software maintains its integrity and can protect user information from theft and damage?",
+    "options": [
+      "A. User Testing",
+      "B. Release Testing",
+      "C. Performance Testing",
+      "D. Security Testing"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week2_Quiz1_q10",
+    "week": "Week2",
+    "quiz": "Quiz1",
+    "question": "When a software company distributes an early version of its product to a large, external group of users for comments on its usability in their own environments, what is this called?",
+    "options": [
+      "A. Alpha Testing",
+      "B. Beta Testing",
+      "C. System Testing",
+      "D. Functional Testing"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz2_q1",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "What is the primary goal of functional testing?",
+    "options": [
+      "A. To ensure the code is easy to read and maintain.",
+      "B. To check if users find the product useful and easy to use.",
+      "C. To test the system's response time under a heavy user load.",
+      "D. To find bugs and provide evidence that the system is fit for its purpose."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week2_Quiz2_q2",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "Which sequence correctly orders the stages of functional testing, from the smallest component to the complete system?",
+    "options": [
+      "A. System testing → Feature testing → Unit testing → Release testing",
+      "B. Unit testing → System testing → Feature testing → Release testing",
+      "C. Unit testing → Feature testing → System testing → Release testing",
+      "D. Feature testing → Unit testing → Release testing → System testing"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz2_q3",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "What is the main objective of unit testing?",
+    "options": [
+      "A. To test that a complete user feature works as intended.",
+      "B. To decide if the software is good enough for customers.",
+      "C. To test program units, like functions or methods, in isolation.",
+      "D. To test the interactions between multiple system features."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz2_q4",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "In the context of unit testing, which of the following best defines a \"code unit\"?",
+    "options": [
+      "A. The entire software product.",
+      "B. A single line of code written by a developer.",
+      "C. A specific feature requested by a user.",
+      "D. Anything with a clearly defined responsibility, like a function or class method."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week2_Quiz2_q5",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "What is the fundamental principle behind using equivalence partitions to design tests?",
+    "options": [
+      "A. To divide the code into equal parts for different testers to work on.",
+      "B. To group inputs that are treated similarly by the code, so that one test can represent the entire group.",
+      "C. To focus exclusively on inputs that are known to have caused errors in the past.",
+      "D. To test every single possible input to guarantee the program is completely free of faults."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz2_q6",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "When designing unit tests, why is it important to also identify \"incorrectness partitions\"?",
+    "options": [
+      "A. To test that the program correctly detects and handles invalid inputs as expected.",
+      "B. To make the overall test suite smaller and faster to run.",
+      "C. To prove that the program will never fail under any circumstances.",
+      "D. To avoid testing edge cases that are unlikely to occur in production."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week2_Quiz2_q7",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "Feature testing is primarily concerned with which aspect of software development?",
+    "options": [
+      "A. Verifying that individual functions work correctly in isolation.",
+      "B. Ensuring that integrated code units work together to provide useful functionality.",
+      "C. Checking the system's performance and stability under heavy load.",
+      "D. Finding security vulnerabilities that an attacker might be able to exploit."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz2_q8",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "Feature testing involves two types of tests: \"interaction tests\" and \"usefulness tests.\" What is the main goal of usefulness tests?",
+    "options": [
+      "A. To check for bugs in how different code units are integrated.",
+      "B. To verify that the feature implements something that users actually want or need.",
+      "C. To ensure the feature's code is optimized for maximum speed.",
+      "D. To confirm that all individual code units passed their own tests."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz2_q9",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "How are user stories often utilized in the feature testing process?",
+    "options": [
+      "A. They are converted directly into the final user documentation.",
+      "B. They are used only for high-level system testing, not feature testing.",
+      "C. They serve as a basis for organizing tests to ensure the feature aligns with real-world user scenarios.",
+      "D. They are used by marketing teams to create advertisements for the product."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz2_q10",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "A primary goal of system testing, which is not typically covered in unit or feature testing, is to:",
+    "options": [
+      "A. test a single function to verify its return value.",
+      "B. discover unexpected and unwanted interactions between different system features.",
+      "C. check the code for proper syntax and adherence to style guides.",
+      "D. verify the logic of an individual class method in isolation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz2_q11",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "Beyond checking for feature interactions, what is another crucial objective of system testing?",
+    "options": [
+      "A. Ensuring every single line of code has been executed at least once.",
+      "B. Confirming that the development team has met its deadline.",
+      "C. Verifying that the system operates correctly in the different environments where it will be used.",
+      "D. Making sure each developer has written enough unit tests for their code."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz2_q12",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "According to the provided text, what is an effective way to systematically conduct system testing?",
+    "options": [
+      "A. By having the original programmer test their own code without guidance.",
+      "B. By starting with a set of scenarios describing possible user tasks and working through them.",
+      "C. By focusing only on the newest features that have been recently added.",
+      "D. By randomly clicking buttons and entering data to try to crash the system."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz2_q13",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "What is a key distinction between release testing and system testing?",
+    "options": [
+      "A. Release testing is automated, while system testing is always manual.",
+      "B. Release testing focuses on finding every possible bug, while system testing focuses on performance.",
+      "C. System testing is done in a test environment, while release testing is done in the real operational environment.",
+      "D. System testing is performed by end-users, while release testing is performed by developers."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz2_q14",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "The main purpose of release testing is to:",
+    "options": [
+      "A. find and fix every remaining bug in the software.",
+      "B. provide developers with feedback on code quality.",
+      "C. decide if the system is good enough to be released to customers.",
+      "D. test each new feature as soon as it is developed."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz2_q15",
+    "week": "Week2",
+    "quiz": "Quiz2",
+    "question": "At which stage of functional testing would a developer specifically check that several code units, possibly created by different programmers, are correctly integrated to deliver a single piece of user functionality?",
+    "options": [
+      "A. Unit testing",
+      "B. Feature testing",
+      "C. System testing",
+      "D. Release testing"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz3_q1",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "What is the core idea behind test automation?",
+    "options": [
+      "A. Tests are written as manual scripts for a human to follow.",
+      "B. Only the user interface (UI) parts of an application are tested.",
+      "C. Tests are written as executable code that can run without manual intervention.",
+      "D. The goal is to prove that the software has no bugs at all."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz3_q2",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "The \"Arrange-Action-Assert\" pattern is a common structure for automated tests. What happens during the \"Assert\" step?",
+    "options": [
+      "A. Test parameters and the test environment are set up.",
+      "B. The code unit being tested is called with specific inputs.",
+      "C. The test checks if the actual result from the code matches the expected outcome.",
+      "D. The results of the test are reported to the development team."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz3_q3",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "What is the definition of regression testing?",
+    "options": [
+      "A. The process of writing new tests for a newly developed feature.",
+      "B. The process of re-running previous tests after a change to ensure nothing has broken.",
+      "C. The process of manually testing the software just before a major release.",
+      "D. The process of removing old, outdated tests from the test suite."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz3_q4",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "What is the most significant advantage of having an automated test suite for regression testing?",
+    "options": [
+      "A. It eliminates the need for any manual testing whatsoever.",
+      "B. It guarantees that no new bugs will ever be introduced into the code.",
+      "C. It allows thousands of tests to be run in seconds, giving teams the confidence to make changes safely and quickly.",
+      "D. It automatically generates new test cases based on user behavior."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz3_q5",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "What is the main principle of the Test Pyramid model proposed by Mike Cohn?",
+    "options": [
+      "A. To guide the structure of an automated test suite, emphasizing a large number of fast unit tests at the base.",
+      "B. To ensure that every developer writes the same number of tests.",
+      "C. To mandate that 100% of testing must be automated.",
+      "D. To focus testing efforts primarily on the user interface because it's what the customer sees."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week2_Quiz3_q6",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "According to the Test Pyramid, why should you have significantly more unit tests than system/user interface (UI) tests?",
+    "options": [
+      "A. Unit tests are more interesting for developers to write.",
+      "B. System tests are unable to find important bugs.",
+      "C. Unit tests are much faster, more stable, and pinpoint problems more precisely than higher-level tests.",
+      "D. UI tests can only be performed manually and cannot be automated."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz3_q7",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "Which statement best describes Test-Driven Development (TDD)?",
+    "options": [
+      "A. A process where you write production code first and then write tests for it later.",
+      "B. A process where you write an automated test before you write the production code needed to make it pass.",
+      "C. A methodology where a separate testing team is solely responsible for all testing activities.",
+      "D. A technique focused only on testing the security aspects of an application."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz3_q8",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "What is the correct sequence of the Test-Driven Development (TDD) cycle?",
+    "options": [
+      "A. Green → Red → Refactor",
+      "B. Red → Refactor → Green",
+      "C. Refactor → Red → Green",
+      "D. Red → Green → Refactor"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week2_Quiz3_q9",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "In the Test-Driven Development (TDD) cycle, what is the primary purpose of the \"Red\" phase?",
+    "options": [
+      "A. To write the simplest possible production code.",
+      "B. To clean up and improve the code that was just written.",
+      "C. To write a small, specific test that fails because the required functionality does not yet exist.",
+      "D. To run all existing tests to make sure they are still passing."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz3_q10",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "After a test passes in the \"Green\" phase of Test-Driven Development (TDD), what is the goal of the \"Refactor\" phase?",
+    "options": [
+      "A. To write another failing test for the next piece of functionality.",
+      "B. To deploy the code immediately to production.",
+      "C. To clean up and improve the code's design without changing its behavior, confident that the tests will catch any regressions.",
+      "D. To ask another developer to review the code."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz3_q11",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "Which of the following is a key benefit of practicing Test-Driven Development (TDD)?",
+    "options": [
+      "A. It completely eliminates the need for code reviews.",
+      "B. It guarantees that the software will be 100% bug-free.",
+      "C. The resulting tests act as a form of executable documentation that is always up-to-date with the code.",
+      "D. It is the fastest way to write code, especially for projects with unclear requirements."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz3_q12",
+    "week": "Week2",
+    "quiz": "Quiz3",
+    "question": "According to the course materials, what is a potential challenge or downside of Test-Driven Development (TDD)?",
+    "options": [
+      "A. It results in having too few tests to cover the codebase.",
+      "B. It can discourage developers from making radical refactoring changes if it means rewriting many tests.",
+      "C. It simplifies debugging to the point where developers no longer learn valuable skills.",
+      "D. It only works for user interface testing and cannot be used for backend logic."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz4_q1",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "What is the primary definition of a code review?",
+    "options": [
+      "A. An automated process that scans code for performance issues.",
+      "B. A formal meeting where project managers approve code for deployment.",
+      "C. A systematic, peer-evaluation process where developers check each other's code for correctness and quality.",
+      "D. The act of a single developer re-reading their own code before submitting it."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz4_q2",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "Why are code reviews a critical complement to automated testing?",
+    "options": [
+      "A. They are much faster than running a full suite of automated tests.",
+      "B. They can find bugs caused by a misunderstanding of requirements, which automated tests would likely miss.",
+      "C. They focus only on the visual aspects of the user interface.",
+      "D. They completely eliminate the need for any further testing."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz4_q3",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "Besides finding bugs, what is another significant benefit of conducting regular code reviews?",
+    "options": [
+      "A. It helps determine which developer writes the fewest bugs.",
+      "B. It serves as the primary way to calculate project costs.",
+      "C. It is an excellent method for sharing knowledge about the codebase across the team.",
+      "D. It is a substitute for writing technical documentation."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz4_q4",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "Which of the following issues is most effectively identified through a code review rather than by running functional tests?",
+    "options": [
+      "A. A calculation that produces an incorrect numerical result.",
+      "B. A part of the program that crashes when given a null input.",
+      "C. Code that is poorly organized and difficult to understand, even if it works correctly.",
+      "D. A feature that doesn't meet its required response time under load."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz4_q5",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "According to the course materials, what should a reviewer examine in addition to the program code being reviewed?",
+    "options": [
+      "A. The developer's previous performance reports.",
+      "B. The project's marketing and sales strategy.",
+      "C. The automated tests written for the code to ensure they are complete and correct.",
+      "D. The time it took the programmer to write the code."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz4_q6",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "What kind of culture should be fostered for code reviews to be successful?",
+    "options": [
+      "A. A highly competitive one, where reviewers try to find the most flaws to prove their expertise.",
+      "B. A culture where reviews are seen as a way to formally evaluate and rank programmers.",
+      "C. A positive and collaborative one, where the goal is to improve the code, not to criticize the programmer.",
+      "D. A culture where programmers are expected to reject all feedback to show confidence in their work."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz4_q7",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "Which of the following is listed as a key area to look for in a code review checklist?",
+    "options": [
+      "A. The number of lines of code written.",
+      "B. The time spent on the task.",
+      "C. The correctness of the code and whether it handles edge cases.",
+      "D. The programming language used."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz4_q8",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "What is the recommended best practice for the scope of a single code review session?",
+    "options": [
+      "A. To cover as much code as possible in a single day.",
+      "B. To focus on a manageable amount of code (e.g., 200-400 lines) in a session lasting about an hour.",
+      "C. To only review code written by senior developers.",
+      "D. To continue the review until every participant agrees the code is perfect."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz4_q9",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "Modern code review tools often integrate with code repositories like Github. What is the primary benefit of this integration?",
+    "options": [
+      "A. It allows the tool to automatically fix all identified bugs.",
+      "B. It can automatically set up a code review whenever a programmer submits new code.",
+      "C. It prevents programmers from submitting code that contains any bugs.",
+      "D. It replaces the need for any human involvement in the review process."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz4_q10",
+    "week": "Week2",
+    "quiz": "Quiz4",
+    "question": "Why is a checklist a useful tool for a code reviewer?",
+    "options": [
+      "A. It helps the reviewer remember to check for common types of errors and ensures consistency.",
+      "B. It serves as a legally binding contract between the programmer and the reviewer.",
+      "C. It automatically scores the quality of the code on a scale of 1 to 10.",
+      "D. It provides the exact code changes that need to be made."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week2_Quiz5_q1",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "Which of the following best distinguishes Continuous Delivery (CD) from Continuous Deployment?",
+    "options": [
+      "A. Delivery includes manual testing; Deployment doesn’t",
+      "B. Delivery stops before production release; Deployment automates it",
+      "C. Deployment happens weekly; Delivery daily",
+      "D. They are the same"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz5_q2",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "Which YAML (YAML Ain't Markup Language) file defines a GitHub Actions workflow?",
+    "options": [
+      "A. .github/settings.yml",
+      "B. .github/workflows/ci.yml",
+      "C. .git/config",
+      "D. package.json"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz5_q3",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "What is a key reason to use branch protections in Continuous Integration/Continuous Delivery (CI/CD)?",
+    "options": [
+      "A. To make branching harder",
+      "B. To ensure only tested, reviewed code merges to main",
+      "C. To slow down releases",
+      "D. To prevent code reviews"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz5_q4",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "What benefit does Infrastructure as Code (IaC) provide?",
+    "options": [
+      "A. It hides infrastructure details",
+      "B. It enables consistent, versioned, reproducible environments",
+      "C. It eliminates the need for documentation",
+      "D. It allows only manual configuration"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz5_q5",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "Which of the following is NOT typically part of a Continuous Integration (CI) pipeline?",
+    "options": [
+      "A. Unit testing",
+      "B. Code checkout",
+      "C. Docker image build",
+      "D. Marketing plan review"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week2_Quiz5_q6",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "What is the purpose of caching dependencies in Continuous Integration (CI)?",
+    "options": [
+      "A. To make builds slower for accuracy",
+      "B. To skip testing",
+      "C. To speed up repeated builds by reusing unchanged files",
+      "D. To reduce code coverage"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week2_Quiz5_q7",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "Why is containerization valuable in Continuous Integration/Continuous Delivery (CI/CD) pipelines?",
+    "options": [
+      "A. Containers ensure consistent environments across stages",
+      "B. Containers are slower than virtual machines (VMs)",
+      "C. Containers remove the need for testing",
+      "D. Containers replace all scripts"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week2_Quiz5_q8",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "Which metric is part of the DevOps Research and Assessment (DORA) metrics for DevOps performance?",
+    "options": [
+      "A. Number of developers on a project",
+      "B. Deployment frequency",
+      "C. Total code size",
+      "D. Meeting hours per week"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz5_q9",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "What is a common cause of pipeline failures in Continuous Integration/Continuous Delivery (CI/CD)?",
+    "options": [
+      "A. Too many reviewers",
+      "B. Flaky or unstable tests",
+      "C. Fast network connections",
+      "D. Use of YAML syntax"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz5_q10",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "What is the benefit of ‘fail fast’ in pipeline design?",
+    "options": [
+      "A. It hides test results",
+      "B. It saves time by detecting errors early",
+      "C. It ensures all jobs run regardless of failure",
+      "D. It only applies to manual testing"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week2_Quiz5_q11",
+    "week": "Week2",
+    "quiz": "Quiz5",
+    "question": "In a Continuous Delivery (CD) pipeline, what does blue-green deployment help achieve?",
+    "options": [
+      "A. Simultaneous deployment to all servers",
+      "B. Instant rollback and minimal downtime during releases",
+      "C. Random user routing",
+      "D. Cost reduction by halving infrastructure"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz1_q1",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "What is widely considered the primary underlying cause of many faults and programming errors?",
+    "options": [
+      "A. Complexity",
+      "B. Poor performance",
+      "C. Outdated hardware",
+      "D. Frequent requirement changes"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz1_q2",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "The \"Single Responsibility Principle\" (SRP) states that a class should have...",
+    "options": [
+      "A. ...only one public method.",
+      "B. ...only one developer working on it.",
+      "C. ...only one primary reason to change.",
+      "D. ...no more than 100 lines of code."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz1_q3",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "A class ReportGenerator both fetches data from a database and formats it as a Portable Document Format (PDF). This violates SRP. What is the best way to refactor this?",
+    "options": [
+      "A. Add a new method to also format the data as a Comma-Separated Values (CSV).",
+      "B. Move the database-fetching logic into a separate ReportData class.",
+      "C. Make the class static so it can be accessed globally.",
+      "D. Add more comments to explain what the class is doing."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz1_q4",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "Deeply nested if-else statements are a \"code smell\" primarily because they increase...",
+    "options": [
+      "A. ...Data Complexity.",
+      "B. ...Decision Complexity.",
+      "C. ...Program compile time.",
+      "D. ...Network latency."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz1_q5",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "What is a \"Guard Clause\"?",
+    "options": [
+      "A. A try-catch block used to protect code from crashing.",
+      "B. A conditional check at the beginning of a function that returns early.",
+      "C. A password or key used to protect a block of data.",
+      "D. A comment that warns other developers not to change a function."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz1_q6",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "Why is it generally recommended to avoid deep inheritance hierarchies?",
+    "options": [
+      "A. They are no longer supported in modern programming languages.",
+      "B. They create tight coupling and make the impact of changes hard to predict.",
+      "C. They are much slower than using if-else statements.",
+      "D. They prevent the use of automated unit testing."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz1_q7",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "What is the primary benefit of using an established design pattern?",
+    "options": [
+      "A. It is a reliable, proven, and well-understood solution to a common problem.",
+      "B. It guarantees your program will run faster than any other solution.",
+      "C. It is the only correct way to write object-oriented code.",
+      "D. It automatically writes large sections of your code for you."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz1_q8",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "You need to provide a single, simplified interface to a very complex subsystem of classes. What structural design pattern is best for this?",
+    "options": [
+      "A. The Observer Pattern",
+      "B. The Facade Pattern",
+      "C. The Singleton Pattern",
+      "D. The Prototype Pattern"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz1_q9",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "You are building a weather app. When the WeatherStation object's data changes, multiple user interface (UI) elements (a chart, a dashboard) must all update automatically. What behavioral pattern is best for this?",
+    "options": [
+      "A. The Observer Pattern",
+      "B. The Facade Pattern",
+      "C. The State Pattern",
+      "D. The Mediator Pattern"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz1_q10",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "What is the definition of \"refactoring\"?",
+    "options": [
+      "A. Fixing all known bugs in a program before a release.",
+      "B. Rewriting a program from scratch in a new language.",
+      "C. Improving the internal structure of code without changing its external behavior.",
+      "D. Adding new features to an existing program."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz1_q11",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "What is the most crucial step to perform repeatedly while refactoring a program?",
+    "options": [
+      "A. Get approval from your manager for every change.",
+      "B. Delete all the old code that you are replacing.",
+      "C. Run the automated test suite after each small change.",
+      "D. Write documentation for the new code."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz1_q12",
+    "week": "Week3",
+    "quiz": "Quiz1",
+    "question": "The \"Gang of Four\" (GoF) design patterns are grouped into three categories. Which of the following is NOT one of those categories?",
+    "options": [
+      "A. Creational",
+      "B. Structural",
+      "C. Functional",
+      "D. Behavioral"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz2_q1",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "Besides preventing security attacks, what is a key reliability reason for input validation?",
+    "options": [
+      "A. To prevent \"database pollution\" from accidentally incorrect data.",
+      "B. To make the user interface load faster.",
+      "C. To reduce the program's memory usage.",
+      "D. To ensure all inputs are stored in a single format."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz2_q2",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "What is the \"whitelisting\" approach to input validation?",
+    "options": [
+      "A. Defining a set of rules for what is not allowed (e.g., <script>).",
+      "B. Defining a set of rules for what is allowed, and rejecting everything else.",
+      "C. A list of users who are allowed to use the system.",
+      "D. Allowing all inputs except those from a known bad Internet Protocol (IP) address."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz2_q3",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "Why is whitelisting generally considered a more secure strategy than blacklisting?",
+    "options": [
+      "A. Blacklisting is much harder to program.",
+      "B. Whitelisting runs faster.",
+      "C. Attackers can often find new ways to bypass a blacklist, but it's much harder to bypass a strict whitelist.",
+      "D. Whitelisting can be performed on the client-side, while blacklisting cannot."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz2_q4",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "A web form uses JavaScript to check if an email is valid before the user clicks \"submit.\" This is...",
+    "options": [
+      "A. ...all the validation that is needed for a secure application.",
+      "B. ...a form of server-side validation.",
+      "C. ...good for user experience, but insufficient for security.",
+      "D. ...a bad practice that slows down the user's browser."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz2_q5",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "For security and data integrity, where must validation always be performed?",
+    "options": [
+      "A. On the client-side (in the browser).",
+      "B. On the server-side.",
+      "C. In the database, using triggers.",
+      "D. In a separate, dedicated validation microservice."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz2_q6",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "What is a \"regular expression\" (regex) commonly used for in validation?",
+    "options": [
+      "A. Encrypting the user's input before storing it.",
+      "B. Defining a pattern (e.g., for an email or phone number) that an input string must match.",
+      "C. Handling program crashes from bad input.",
+      "D. Refactoring complex code."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz2_q7",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "Why is it important to check that a numeric input (like 'age') is not an impossibly large number?",
+    "options": [
+      "A. It wastes database storage space.",
+      "B. It is hard for humans to read.",
+      "C. It can cause a numeric overflow exception and crash the program.",
+      "D. It makes sorting the numbers very slow."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz2_q8",
+    "week": "Week3",
+    "quiz": "Quiz2",
+    "question": "In many regex dialects, what does the $ (dollar sign) symbol mean when used at the end of an expression?",
+    "options": [
+      "A. The match must end at the end of the string.",
+      "B. The previous character is optional.",
+      "C. It matches a literal dollar sign.",
+      "D. It matches any single number."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz3_q1",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "What is the primary goal of failure management?",
+    "options": [
+      "A. To guarantee that a program has zero bugs.",
+      "B. To minimize the impact of failures on the user and prevent data loss.",
+      "C. To automatically fix all bugs as soon as they are found.",
+      "D. To make the program run faster, which reduces the chance of failure."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz3_q2",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "When updating a bank database, you must (1) debit account A and (2) credit account B. What mechanism ensures that both steps complete, or neither does?",
+    "options": [
+      "A. An if-else block",
+      "B. A try-except block",
+      "C. An Atomicity, Consistency, Isolation, Durability (ACID) transaction",
+      "D. A regular expression"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz3_q3",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "What is the main purpose of an exception-handling mechanism like try-except?",
+    "options": [
+      "A. To \"catch\" runtime errors and transfer control to a special block of code for graceful cleanup.",
+      "B. To validate user input before it is processed.",
+      "C. To prevent errors from ever happening in the first place.",
+      "D. To automatically fix the bug and retry the operation."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz3_q4",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "If a function catches an exception, performs a local cleanup (like closing a file), and then re-raises the exception, why would it do this?",
+    "options": [
+      "A. To log the exception to the console twice.",
+      "B. To crash the program intentionally.",
+      "C. To allow a higher-level (calling) function to also handle the exception.",
+      "D. To prove to the compiler that the exception was caught."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz3_q5",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "What are two common mechanisms to help a user recover work after a program crash?",
+    "options": [
+      "A. Auto-save and Activity logging.",
+      "B. Error messages and Pop-up alerts.",
+      "C. Unit testing and Integration testing.",
+      "D. Whitelisting and Blacklisting."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz3_q6",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "Why do external web Application Programming Interfaces (APIs) typically return numeric error codes (like Hypertext Transfer Protocol (HTTP) 404 or 500) instead of language-specific exceptions?",
+    "options": [
+      "A. Numbers are faster to send over the internet.",
+      "B. The API and the calling program may be written in different, incompatible programming languages.",
+      "C. Numeric codes are more secure and cannot be intercepted.",
+      "D. It is a tradition that has no real technical purpose."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week3_Quiz3_q7",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "What is the simplest way to prevent your application from hanging forever if an external Application Programming Interface (API) call never responds?",
+    "options": [
+      "A. Use a timeout mechanism.",
+      "B. Restart the server.",
+      "C. Send the request again immediately.",
+      "D. Call a different API."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz3_q8",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "What design pattern is used to handle a repeatedly failing external service by \"tripping\" and temporarily blocking all new requests to it?",
+    "options": [
+      "A. The Circuit Breaker Pattern",
+      "B. The Observer Pattern",
+      "C. The Facade Pattern",
+      "D. The Transaction Pattern"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week3_Quiz3_q9",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "What is the purpose of an assert statement?",
+    "options": [
+      "A. To handle a known program exception, like try-catch.",
+      "B. To validate user input from a form.",
+      "C. To check if a condition is true (as a \"sanity check\") and raise an error if it's false.",
+      "D. To print a debug message to the console."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week3_Quiz3_q10",
+    "week": "Week3",
+    "quiz": "Quiz3",
+    "question": "When your program has an unrecoverable internal crash, what is the best practice for the message shown to the user?",
+    "options": [
+      "A. A detailed technical error log (e.g., \"NullPointerException at line 42\").",
+      "B. A simple, non-technical message (e.g., \"An unexpected error occurred\").",
+      "C. No message at all (just close the application).",
+      "D. A message blaming the user for the error."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz1_q1",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "What is the primary goal of defining a software architecture?",
+    "options": [
+      "A. To choose the specific programming language and database.",
+      "B. To document the system's high-level structure and component interactions.",
+      "C. To write the first modules of code for the application.",
+      "D. To finalize the user interface (UI) design and branding."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz1_q2",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "A software system's quality attributes (like performance, reliability, and security) are also known as:",
+    "options": [
+      "A. Functional requirements",
+      "B. Non-functional requirements",
+      "C. Business goals",
+      "D. User stories"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz1_q3",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "A non-functional requirement states, \"The system must be able to handle a 10x increase in user traffic over one year.\" This requirement directly influences which quality attribute?",
+    "options": [
+      "A. Usability",
+      "B. Security",
+      "C. Scalability",
+      "D. Maintainability"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz1_q4",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "Why is it critically important to get the architecture right early in the project?",
+    "options": [
+      "A. Because good architecture is cheap and easy to implement.",
+      "B. Because poor architectural decisions are extremely difficult and expensive to change later.",
+      "C. Because the architecture determines the final price of the product.",
+      "D. Because the first design is always the best one."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz1_q5",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "(Scenario) A company builds an e-commerce site. As it becomes popular, the site crashes during sales. This system is failing which quality attribute?",
+    "options": [
+      "A. Scalability",
+      "B. Usability",
+      "C. Security",
+      "D. Maintainability"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz1_q6",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "Which quality attribute refers to the ease with which developers can fix bugs or add new features?",
+    "options": [
+      "A. Performance",
+      "B. Resilience",
+      "C. Maintainability",
+      "D. Availability"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week4_Quiz1_q7",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "The process of architectural design is best described as:",
+    "options": [
+      "A. A series of trade-offs to balance conflicting goals",
+      "B. A fixed checklist of components to include",
+      "C. A task only for the most senior developer",
+      "D. A final step completed just before release"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz1_q8",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "What is the most common trade-off when implementing very strict and complex security measures?",
+    "options": [
+      "A. The system becomes less maintainable.",
+      "B. The system's performance improves.",
+      "C. The system becomes less usable for the end-user.",
+      "D. The system becomes cheaper to build."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week4_Quiz1_q9",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "What is the most common trade-off when breaking a large system into many small, independent services to improve maintainability?",
+    "options": [
+      "A. The system's overall performance may decrease.",
+      "B. The system becomes less secure.",
+      "C. The system becomes harder to scale.",
+      "D. The system's user interface becomes more complex."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz1_q10",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "Which of the following is an organizational (human) factor that influences architectural decisions?",
+    "options": [
+      "A. The type of database selected",
+      "B. The speed of the server's central processing unit (CPU)",
+      "C. The skill level and experience of the development team",
+      "D. The network protocol being used"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week4_Quiz1_q11",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "Which quality attribute refers to a system's ability to continue operating even if some of its components have failed?",
+    "options": [
+      "A. Resilience (or Fault Tolerance)",
+      "B. Performance",
+      "C. Usability",
+      "D. Security"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz1_q12",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "A design with a single, central, highly-protected \"vault\" for all its data is:",
+    "options": [
+      "A. Highly resilient but complex to manage.",
+      "B. Simple to protect, but has a single point of failure.",
+      "C. The best design for all high-security systems.",
+      "D. Very fast but not secure."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz1_q13",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "How is high availability (like \"99.999% uptime\") typically achieved in a system's architecture?",
+    "options": [
+      "A. By using a faster programming language",
+      "B. By implementing redundancy for critical components",
+      "C. By making the user interface simpler",
+      "D. By hiring more developers"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz1_q14",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "What is the main disadvantage of building a system with high redundancy?",
+    "options": [
+      "A. It makes the system less secure.",
+      "B. It makes the system slower for users.",
+      "C. It significantly increases the system's cost and complexity.",
+      "D. It makes the system impossible to maintain."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week4_Quiz1_q15",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "What is the primary goal of creating architectural diagrams and documents?",
+    "options": [
+      "A. To create a legal contract for the client",
+      "B. To build a shared understanding among the development team",
+      "C. To prove the system will have no bugs",
+      "D. To automatically generate all the code"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz1_q16",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "Which of the following is NOT a non-functional quality attribute?",
+    "options": [
+      "A. A user must be able to reset their password.",
+      "B. The system must be secure from common attacks.",
+      "C. The system must respond to user queries in under 2 seconds.",
+      "D. The system must be online 24/7."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz1_q17",
+    "week": "Week4",
+    "quiz": "Quiz1",
+    "question": "Which of the following is a key influence on architectural design?",
+    "options": [
+      "A. The expected lifetime of the product",
+      "B. The brand and logo of the product",
+      "C. The marketing campaign for the product",
+      "D. The individual names of the developers"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz2_q1",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "Which architectural pattern separates an application into three interconnected components: data, user interface, and business logic?",
+    "options": [
+      "A. Client-Server",
+      "B. Model-View-Controller (MVC)",
+      "C. Layered Architecture",
+      "D. Microservices"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz2_q2",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "In a Layered Architecture, what is the ‘golden rule’ of communication between layers?",
+    "options": [
+      "A. A layer can only call services in the layer immediately below it.",
+      "B. Any layer can call any other layer.",
+      "C. A layer can only call layers above it.",
+      "D. A layer can only call the layer immediately adjacent to it (above or below)."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz2_q3",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "What is a primary disadvantage of a monolithic architecture compared to a microservices architecture?",
+    "options": [
+      "A. They are simpler to deploy and test in the beginning.",
+      "B. They are generally more secure by default.",
+      "C. The entire application must be redeployed even for a small change.",
+      "D. They have lower network latency for internal communication."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week4_Quiz2_q4",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "Which is a cross-cutting concern?",
+    "options": [
+      "A. Coupon calculation",
+      "B. Security (e.g., auth, protection)",
+      "C. Search ranking",
+      "D. Image thumbnail size"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz2_q5",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "In MVC for web user interfaces (UIs), which statement is accurate?",
+    "options": [
+      "A. Model lives on clients and holds user interface (UI) state only.",
+      "B. Controllers only render HyperText Markup Language (HTML).",
+      "C. Servers never update models.",
+      "D. Views register for model changes and refresh when the model updates."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week4_Quiz2_q6",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "Which statement about Hypertext Transfer Protocol (HTTP) in client–server apps is correct?",
+    "options": [
+      "A. Clients send requests; servers respond.",
+      "B. Servers initiate requests to clients by default.",
+      "C. HTTP is binary only.",
+      "D. HTTP requires Extensible Markup Language (XML) payloads."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week4_Quiz2_q7",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "Why is JavaScript Object Notation (JSON) commonly preferred over Extensible Markup Language (XML) here?",
+    "options": [
+      "A. Browsers can’t parse XML.",
+      "B. JSON guarantees Atomicity, Consistency, Isolation, Durability (ACID).",
+      "C. JavaScript Object Notation (JSON) is usually more compact and faster to parse, and maps to objects easily.",
+      "D. XML can’t encode numbers."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week4_Quiz2_q8",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "In a multi-tier web architecture, which pairing is correct?",
+    "options": [
+      "A. Web server - user auth only.",
+      "B. Database server - HTML generation.",
+      "C. Web server - Atomicity, Consistency, Isolation, Durability (ACID) transactions.",
+      "D. Application server - application-specific operations."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week4_Quiz2_q9",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "What’s the main role of a load balancer in client–server systems?",
+    "options": [
+      "A. Encrypt database tables.",
+      "B. Distribute requests across servers to share load and improve availability.",
+      "C. Replace authentication.",
+      "D. Eliminate network latency."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week4_Quiz2_q10",
+    "week": "Week4",
+    "quiz": "Quiz2",
+    "question": "In the “multiple database per component” design, what extra piece keeps shared data correct?",
+    "options": [
+      "A. A reconciliation component/process.",
+      "B. A Content Delivery Network (CDN).",
+      "C. A sticky-session cookie.",
+      "D. A single global mutex."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week5_Quiz1_q1",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "Why is it beneficial for services in a cloud-based system to be stateless?",
+    "options": [
+      "A. Stateless services are easier to program and require less code.",
+      "B. They can be easily replicated, run in parallel, and moved between virtual servers to handle scaling.",
+      "C. They are the only type of service that can communicate using Extensible Markup Language (XML)-based protocols.",
+      "D. They maintain a persistent, in-memory copy of the user's session, which improves performance."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz1_q2",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "What was a significant problem with the \"Web Services\" standards (e.g., Simple Object Access Protocol (SOAP), Web Services Description Language (WSDL)) from the early 2000s?",
+    "options": [
+      "A. They were too simple and did not support complex business logic.",
+      "B. They could only be written in one programming language.",
+      "C. They involved large, complex Extensible Markup Language (XML) messages that were slow to analyze and had high overhead.",
+      "D. They did not have a standard for interface description."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week5_Quiz1_q3",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "What key insight, pioneered by companies like Amazon, helped define the modern microservice?",
+    "options": [
+      "A. Services should be completely independent, with their own database and their own user interface.",
+      "B. All services in a system should share a single, highly optimized database to reduce complexity.",
+      "C. Services should focus only on technical tasks, while a central monolith handles all business logic.",
+      "D. A service should be related to multiple business functions to be efficient."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week5_Quiz1_q4",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "Which of the following describes the ideal design goal for microservices?",
+    "options": [
+      "A. High coupling and high cohesion",
+      "B. Low coupling and low cohesion",
+      "C. High coupling and low cohesion",
+      "D. Low coupling and high cohesion"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week5_Quiz1_q5",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "Why is low coupling an important characteristic for microservices?",
+    "options": [
+      "A. It ensures that all services can be written in the same programming language.",
+      "B. It allows you to update a service (while maintaining its interface) without having to change other services in the system.",
+      "C. It minimizes the number of functions inside a single service, making the code simpler.",
+      "D. It forces all services to share a single, common database, which simplifies data management."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz1_q6",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "When determining the appropriate \"size\" for a microservice, what guideline does the author suggest?",
+    "options": [
+      "A. The service's code should not exceed a strict limit, such as 500 lines of code.",
+      "B. The service should be small enough to be developed, tested, and deployed by a team in two weeks or less.",
+      "C. The service must encapsulate at least five related business functions to be considered a \"microservice.\"",
+      "D. The service should be large enough to handle a complete, end-to-end business workflow (e.g., user registration)."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz1_q7",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "What is the \"common closure principle\" guideline for decomposing a system?",
+    "options": [
+      "A. All services that are part of the same business capability should be grouped together.",
+      "B. Elements of a system that are likely to be changed at the same time should be located within the same service.",
+      "C. All services should be \"closed\" for modification but \"open\" for extension.",
+      "D. Services should be decomposed based on the data they manage, not their function."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz1_q8",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "What is the \"orchestration\" approach to service coordination?",
+    "options": [
+      "A. Services communicate by publishing events that other services subscribe to, with no central controller.",
+      "B. A separate controller service (the \"conductor\") executes the workflow by calling component services in a specific order.",
+      "C. All services share a central database, which orchestrates the workflow using Atomicity, Consistency, Isolation, Durability (ACID) transactions.",
+      "D. Services directly call each other in a peer-to-peer mesh, negotiating the workflow steps as they go."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz1_q9",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "What is a \"compensating transaction\"?",
+    "options": [
+      "A. A transaction that bundles all data updates into a single unit to guarantee consistency.",
+      "B. A transaction that reverses a previous operation when a failure is detected in a dependent service.",
+      "C. A log of all pending updates used to ensure \"eventual consistency\" between service replicas.",
+      "D. A special transaction used by a circuit breaker to test if a failed service has recovered."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz1_q10",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "How does the \"choreography\" approach to service coordination work?",
+    "options": [
+      "A. A central controller dictates the exact order of operations for all services.",
+      "B. Each service emits an event to indicate it has completed processing, and other services react to those events.",
+      "C. The Application Programming Interface (API) gateway is responsible for coordinating all service workflows.",
+      "D. Services use synchronous, direct calls to coordinate their actions in real-time."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz1_q11",
+    "week": "Week5",
+    "quiz": "Quiz1",
+    "question": "Why is the \"circuit breaker\" pattern often preferred over simple timeouts for managing external service failures?",
+    "options": [
+      "A. A circuit breaker encrypts the service request, making it more secure.",
+      "B. A circuit breaker immediately denies access to a failed service without waiting for the timeout, preventing system slowdown.",
+      "C. A circuit breaker automatically retries the request dozens of times until the service responds.",
+      "D. A circuit breaker automatically scales up a new instance of the failed service."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz2_q1",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "What does the acronym REST stand for?",
+    "options": [
+      "A. Remote Execution STrategy",
+      "B. REpresentational State Transfer",
+      "C. Resource, Entity, and Service Transfer",
+      "D. Reliable Enterprise Service Transport"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz2_q2",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "What is the fundamental concept of a \"resource\" in the REST architectural style?",
+    "options": [
+      "A. A function or method call that can be executed remotely.",
+      "B. Any chunk of data (e.g., a database record, document, or catalog item) that is identified by a unique Uniform Resource Identifier (URI).",
+      "C. A standardized message protocol, like Simple Object Access Protocol (SOAP) or Advanced Message Queuing Protocol (AMQP).",
+      "D. A stateful connection that is maintained between the client and server."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz2_q3",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "In the RESTful architectural style, which Hypertext Transfer Protocol (HTTP) verb is correctly mapped to its intended operation for managing a resource?",
+    "options": [
+      "A. GET is used to create a new resource.",
+      "B. POST is used to modify an existing resource's data.",
+      "C. PUT is used to update or modify an existing resource.",
+      "D. DELETE is used to retrieve a read-only representation of a resource."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week5_Quiz2_q4",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "How should the GET verb be used in a RESTful service?",
+    "options": [
+      "A. To create a new resource with a server-defined URI.",
+      "B. To read a resource, and it should never update or change the resource's value.",
+      "C. To update an existing resource at a specific URI.",
+      "D. To delete all sub-resources under a specific URI."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz2_q5",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "Which HTTP verb is used to create a new resource, with the server typically assigning the new resource's URI?",
+    "options": [
+      "A. GET",
+      "B. PUT",
+      "C. POST",
+      "D. CREATE"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week5_Quiz2_q6",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "According to the text, what is the most commonly used representation for digital resources in modern RESTful microservices?",
+    "options": [
+      "A. Extensible Markup Language (XML)",
+      "B. HyperText Markup Language (HTML)",
+      "C. Plain Text",
+      "D. JavaScript Object Notation (JSON)"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week5_Quiz2_q7",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "In an HTTP request for a RESTful service, what is the purpose of the Content-Type header?",
+    "options": [
+      "A. It specifies the data format (e.g., application/json) that the client is sending in the request body.",
+      "B. It specifies the content-types (e.g., application/json) that the client can process and finds acceptable in the service response.",
+      "C. It specifies the length of the text in the response body.",
+      "D. It provides the authentication token to prove the client is allowed to access the resource."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week5_Quiz2_q8",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "In an HTTP response, what does the status code 200 indicate?",
+    "options": [
+      "A. The request has failed because the resource was not found.",
+      "B. The request has been successfully processed, but there is no associated content to return.",
+      "C. The request has been successfully processed, and the response body typically contains the requested data.",
+      "D. The request has failed because the input data was malformed (e.g., \"Unprocessable entity\")."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week5_Quiz2_q9",
+    "week": "Week5",
+    "quiz": "Quiz2",
+    "question": "What does the HTTP status code 204 signify?",
+    "options": [
+      "A. The resource was not found.",
+      "B. The request was successful, but there is no content to return.",
+      "C. The service has encountered an internal failure.",
+      "D. The request is malformed."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz3_q1",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "What is the \"DevOps\" approach to service management?",
+    "options": [
+      "A. A separate \"operations\" team is responsible for deploying and managing all services created by the \"development\" team.",
+      "B. The development team is responsible for deployment and service management as well as software development.",
+      "C. It is an approach where all development and operations are outsourced to a third-party vendor.",
+      "D. It is a set of tools used to automate only the testing, but not the deployment, of services."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz3_q2",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "What is the core principle of \"continuous deployment\"?",
+    "options": [
+      "A. New versions of the software are bundled and released periodically, typically three or four times per year.",
+      "B. As soon as a change to a service has been made and validated, the modified service is automatically re-deployed into production.",
+      "C. Developers are responsible for manually deploying their own services after getting approval from the operations team.",
+      "D. All microservices in the system must be deployed at the same time to ensure compatibility."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz3_q3",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "According to the continuous deployment pipeline diagram, what event triggers the start of the automated process?",
+    "options": [
+      "A. A service monitoring system detects a performance failure.",
+      "B. A user submits a new feature request to the development team.",
+      "C. A programmer commits a code change to the version management system (e.g., Git).",
+      "D. The team manager approves the deployment in a weekly planning meeting."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week5_Quiz3_q4",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "In the continuous deployment pipeline, what is the primary purpose of a \"container\" (e.g., Docker)?",
+    "options": [
+      "A. To act as a virtual server that includes a full operating system.",
+      "B. To be a virtualized environment (deployment unit) that includes all the software and dependencies that a service needs to run.",
+      "C. To run the automated unit tests before building the system.",
+      "D. To monitor the service for failures after it has been deployed."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz3_q5",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "What is the role of a container management system like Kubernetes?",
+    "options": [
+      "A. It is a version control system used to store the source code for a service.",
+      "B. It is a tool for writing and running automated unit tests.",
+      "C. It automates container deployment and management, handling scheduling, load balancing, and service discovery.",
+      "D. It is a type of Application Programming Interface (API) gateway used to route traffic to different service versions."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week5_Quiz3_q6",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "In the continuous deployment pipeline, which automated tests are run after the service is containerized and deployed?",
+    "options": [
+      "A. Unit tests",
+      "B. Integration tests",
+      "C. Acceptance tests",
+      "D. All of the above"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week5_Quiz3_q7",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "How can a system using an Application Programming Interface (API) gateway safely manage a \"rollback\" if a newly deployed service version fails?",
+    "options": [
+      "A. The API gateway automatically deletes the failed service container and rebuilds the old one from source code.",
+      "B. The system maintains the old version, and if the monitor detects a problem, it simply switches the \"current version link\" back to the older service.",
+      "C. All client applications are forced to update their URIs to point to the older service version.",
+      "D. The system blocks all new requests, forcing them to time out until a developer manually fixes the bug in the new version."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz3_q8",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "When a service's API must change, how can the system support both old and new clients?",
+    "options": [
+      "A. By forcing all client services to update at the exact same time.",
+      "B. By including the version number as part of the resource's Uniform Resource Identifier (URI).",
+      "C. By deploying the new service on a completely different server domain.",
+      "D. By using a \"compensating transaction\" to automatically translate new API calls to the old format."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week5_Quiz3_q9",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "What is the purpose of a numbering convention like changing a service version from 001 to 101?",
+    "options": [
+      "A. To indicate a minor bug fix that does not change the API.",
+      "B. To signal to the API gateway that this service should be deployed in a container.",
+      "C. To identify whether a new version has introduced an API change.",
+      "D. To show that the service is now managed by a different development team."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week5_Quiz3_q10",
+    "week": "Week5",
+    "quiz": "Quiz3",
+    "question": "According to the text, what is a primary risk of deploying new software services that testing can never completely eliminate?",
+    "options": [
+      "A. The cost of the cloud servers will increase.",
+      "B. Unanticipated problems will be caused by the interactions between the new version and existing services.",
+      "C. The service's source code will be stolen during deployment.",
+      "D. The service will be deployed using the wrong programming language."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz1_q1",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "What is the main goal of Requirement Engineering (RE)?",
+    "options": [
+      "A. To design the software architecture",
+      "B. To identify, analyze, and document what the system should do",
+      "C. To write and test program code",
+      "D. To deploy the final software"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz1_q2",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "Which of the following best describes a “requirement”?",
+    "options": [
+      "A. A wish list from users",
+      "B. A measurable statement of what the system must do or a constraint it must satisfy",
+      "C. A design diagram of the system",
+      "D. A testing plan for the final product"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz1_q3",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "What is the biggest risk of skipping the Requirement Engineering phase?",
+    "options": [
+      "A. Increased speed of development",
+      "B. Misunderstanding stakeholder needs leading to project failure",
+      "C. Lack of programming resources",
+      "D. Poor user interface design only"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz1_q4",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "Which activity does NOT belong to Requirement Engineering?",
+    "options": [
+      "A. Eliciting stakeholder needs",
+      "B. Defining software requirements",
+      "C. Writing code in Python",
+      "D. Validating requirements with users"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week6_Quiz1_q5",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "Most software project failures are primarily due to:",
+    "options": [
+      "A. Lack of testing",
+      "B. Poor requirements and changing needs",
+      "C. Low coding standards",
+      "D. Poor hardware selection"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz1_q6",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "The phrase “System shall …” is typically used to express:",
+    "options": [
+      "A. Design choices",
+      "B. Implementation tasks",
+      "C. Requirements statements",
+      "D. Testing criteria"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week6_Quiz1_q7",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "The primary purpose of Requirement Engineering is to:",
+    "options": [
+      "A. Gather user needs and define system behavior",
+      "B. Implement the software solution",
+      "C. Maintain servers",
+      "D. Write design patterns"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week6_Quiz1_q8",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "In the System Development Life Cycle (SDLC), Requirement Engineering is positioned:",
+    "options": [
+      "A. Before design and coding",
+      "B. After system deployment",
+      "C. Parallel to maintenance only",
+      "D. During debugging"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week6_Quiz1_q9",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "A “stakeholder” in Requirement Engineering is:",
+    "options": [
+      "A. Only the end-user",
+      "B. Anyone affected by or interested in the system",
+      "C. The developer team only",
+      "D. Only project managers"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz1_q10",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "What is the main difference between a requirement and a design?",
+    "options": [
+      "A. Requirements define what; designs define how",
+      "B. Requirements define how; designs define what",
+      "C. They are identical in purpose",
+      "D. Designs are always written by clients"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week6_Quiz1_q11",
+    "week": "Week6",
+    "quiz": "Quiz1",
+    "question": "In Requirement Engineering, “scope creep” happens when:",
+    "options": [
+      "A. Requirements are reduced due to constraints",
+      "B. New requirements are added without control",
+      "C. Users are removed from the process",
+      "D. The project is completed early"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q1",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Functional requirements describe:",
+    "options": [
+      "A. System constraints or performance expectations",
+      "B. What the system should do",
+      "C. The physical network structure",
+      "D. Organizational policies only"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q2",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Which of the following is an example of a functional requirement?",
+    "options": [
+      "A. System shall support 500 users simultaneously.",
+      "B. The interface must be intuitive.",
+      "C. System shall allow mentors to view student profiles.",
+      "D. Response time must be under 3 seconds."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week6_Quiz2_q3",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Which statement represents a non-functional requirement?",
+    "options": [
+      "A. Allow mentors to upload a profile picture.",
+      "B. Encrypt all user data during transmission.",
+      "C. Allow students to log in via university identification (ID).",
+      "D. Enable admins to reset passwords."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q4",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Non-functional requirements are also known as:",
+    "options": [
+      "A. System constraints",
+      "B. Quality attributes",
+      "C. Data models",
+      "D. Prototypes"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q5",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "The “FURPS” (Functionality, Usability, Reliability, Performance, Supportability) model includes all except:",
+    "options": [
+      "A. Functionality",
+      "B. Usability",
+      "C. Reliability",
+      "D. Productivity"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "Week6_Quiz2_q6",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Which example is a domain requirement for a university system?",
+    "options": [
+      "A. Must store mentor contact information.",
+      "B. Must integrate with university login system.",
+      "C. Should display mentor list within 3 seconds.",
+      "D. Must allow password reset feature."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q7",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Why are domain requirements important?",
+    "options": [
+      "A. They define visual design rules.",
+      "B. They prevent violation of external constraints and regulations.",
+      "C. They help reduce code duplication.",
+      "D. They determine testing order."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q8",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Which requirement is poorly written?",
+    "options": [
+      "A. System shall display mentor list.",
+      "B. System shall be user-friendly.",
+      "C. System shall validate student identification (ID).",
+      "D. System shall log mentor sessions."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q9",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Functional and non-functional requirements differ because:",
+    "options": [
+      "A. Functional define features; non-functional define qualities.",
+      "B. Both describe coding logic.",
+      "C. Non-functional are optional.",
+      "D. Functional depend on the hardware."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week6_Quiz2_q10",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "In testing, non-functional requirements are verified by:",
+    "options": [
+      "A. Functional unit tests",
+      "B. Measurement and performance evaluation",
+      "C. System walkthroughs only",
+      "D. Code review"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q11",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Which type of requirement usually originates from laws or industry regulations?",
+    "options": [
+      "A. Functional",
+      "B. Domain",
+      "C. Non-functional",
+      "D. Performance"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz2_q12",
+    "week": "Week6",
+    "quiz": "Quiz2",
+    "question": "Which of the following sets best represents the three types of requirements?",
+    "options": [
+      "A. Behavioral, System, Logical",
+      "B. Functional, Non-functional, Domain",
+      "C. Physical, Logical, Conceptual",
+      "D. Performance, Usability, Design"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q1",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "Which of the following lists the main phases of Requirement Engineering (RE) in order?",
+    "options": [
+      "A. Specification → Validation → Elicitation → Management",
+      "B. Elicitation → Analysis → Specification → Validation → Management",
+      "C. Analysis → Elicitation → Validation → Specification",
+      "D. Planning → Implementation → Testing"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q2",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "The goal of the elicitation phase is to:",
+    "options": [
+      "A. Code the software",
+      "B. Identify and gather stakeholder needs",
+      "C. Write test scripts",
+      "D. Produce user manuals"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q3",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "Which technique is commonly used during requirement elicitation?",
+    "options": [
+      "A. Unit testing",
+      "B. Interviews",
+      "C. System integration",
+      "D. Debugging"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q4",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "What is a common challenge in elicitation?",
+    "options": [
+      "A. Stakeholders rarely provide conflicting requirements.",
+      "B. Users easily express all their needs.",
+      "C. Hidden assumptions and vague goals",
+      "D. Developers don’t participate."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week6_Quiz3_q5",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "The analysis phase focuses on:",
+    "options": [
+      "A. Writing final code",
+      "B. Resolving requirement conflicts and prioritizing needs",
+      "C. Conducting security audits",
+      "D. Defining test metrics"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q6",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "The MoSCoW (Must, Should, Could, Won't) method is used for:",
+    "options": [
+      "A. Designing the user interface (UI)",
+      "B. Requirement prioritization",
+      "C. Project budgeting",
+      "D. Team scheduling"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q7",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "The output of the specification phase is typically a:",
+    "options": [
+      "A. Source code file",
+      "B. Software Requirements Specification (SRS)",
+      "C. Unified Modeling Language (UML) activity diagram",
+      "D. Test execution plan"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q8",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "Requirement validation ensures that requirements are:",
+    "options": [
+      "A. Implemented efficiently",
+      "B. Correct, complete, consistent, and feasible",
+      "C. Prioritized by management only",
+      "D. Frozen after documentation"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q9",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "Which method can be used to validate requirements?",
+    "options": [
+      "A. Unit tests",
+      "B. Walkthroughs and reviews",
+      "C. Deployment reports",
+      "D. Database normalization"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q10",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "Requirement management is necessary because:",
+    "options": [
+      "A. Requirements never change",
+      "B. It handles updates, traceability, and version control",
+      "C. It only tracks test cases",
+      "D. It focuses on team structure"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q11",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "What tool could support requirement management?",
+    "options": [
+      "A. Visual Studio Code",
+      "B. Jira or ReqView",
+      "C. MySQL",
+      "D. Git Bash"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week6_Quiz3_q12",
+    "week": "Week6",
+    "quiz": "Quiz3",
+    "question": "In Agile methods, Requirement Engineering is:",
+    "options": [
+      "A. Done once before coding",
+      "B. Continuous through backlog refinement and iteration",
+      "C. Skipped entirely",
+      "D. Done after deployment"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz1_q1",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "The primary purpose of a software process model is to:",
+    "options": [
+      "A. Force all developers to work the same way.",
+      "B. Provide structure and guidance to the software development lifecycle.",
+      "C. Remove the need for customer involvement.",
+      "D. Guarantee zero defects."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz1_q2",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "Which analogy BEST represents the importance of having a software process:",
+    "options": [
+      "A. Taking an exam without studying.",
+      "B. Cooking a meal by following a recipe.",
+      "C. Listening to music while working.",
+      "D. Shopping without a budget."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz1_q3",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "Which of the following is the most important reason why software process models differ across projects:",
+    "options": [
+      "A. Developer personal preferences.",
+      "B. Differences in customer hobbies.",
+      "C. Variation in project uncertainty and requirements stability.",
+      "D. Availability of office equipment."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz1_q4",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "Early software processes were heavily influenced by:",
+    "options": [
+      "A. Social media platforms.",
+      "B. Manufacturing and engineering disciplines.",
+      "C. Modern agile startups.",
+      "D. Open-source community collaboration."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz1_q5",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "A software process helps improve product quality primarily by:",
+    "options": [
+      "A. Standardizing development activities.",
+      "B. Reducing team communication.",
+      "C. Preventing all requirement changes.",
+      "D. Eliminating the need for testing."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz1_q6",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "A process without defined stages or structure usually leads to:",
+    "options": [
+      "A. High predictability.",
+      "B. Consistent product quality.",
+      "C. Chaos and miscommunication.",
+      "D. Reduced development time."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz1_q7",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "Which of the following is considered a major category of software process models:",
+    "options": [
+      "A. Sequential vs Functional.",
+      "B. Predictive vs Adaptive.",
+      "C. Horizontal vs Vertical.",
+      "D. Internal vs External."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz1_q8",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "Which situation most strongly demands a structured software process:",
+    "options": [
+      "A. A small assignment done by one student.",
+      "B. A large project with multiple teams and responsibilities.",
+      "C. A fun side project made for entertainment.",
+      "D. A quick prototype for personal learning."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz1_q9",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "One of the central challenges that drove the evolution of software processes was:",
+    "options": [
+      "A. Hardware prices decreasing.",
+      "B. Increasing complexity and changing requirements.",
+      "C. Fewer people wanting to be developers.",
+      "D. Overabundance of technical documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz1_q10",
+    "week": "Week7",
+    "quiz": "Quiz1",
+    "question": "Which statement best describes the role of a process model:",
+    "options": [
+      "A. It guarantees the fastest possible development.",
+      "B. It ensures that all teams worldwide use identical workflows.",
+      "C. It provides a structured approach for producing software.",
+      "D. It eliminates the need for planning."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz2_q1",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "Predictive models rely heavily on:",
+    "options": [
+      "A. Early detailed planning.",
+      "B. Flexible iteration.",
+      "C. Minimal documentation.",
+      "D. Constant requirement changes."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz2_q2",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "A predictive model is MOST effective when:",
+    "options": [
+      "A. Requirements are stable and well understood.",
+      "B. Requirements change daily.",
+      "C. Customers are unsure of what they want.",
+      "D. The project requires rapid experimentation."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz2_q3",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The Waterfall Model is BEST described as:",
+    "options": [
+      "A. A highly flexible and cyclic approach.",
+      "B. A sequential process with fixed phases.",
+      "C. A feedback-driven iterative model.",
+      "D. A continuous flow system."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q4",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "A key weakness of the Waterfall Model is that:",
+    "options": [
+      "A. It involves too much customer collaboration.",
+      "B. It delivers working software late in the process.",
+      "C. It prevents all requirement misunderstandings.",
+      "D. It eliminates the need for documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q5",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The V-Model primarily emphasizes:",
+    "options": [
+      "A. Minimum planning.",
+      "B. Heavy prototyping.",
+      "C. Early and structured test planning.",
+      "D. No verification activities."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz2_q6",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The \"V\" shape in the V-Model represents:",
+    "options": [
+      "A. Cost on the left, value on the right.",
+      "B. Increasing complexity over time.",
+      "C. Corresponding verification and validation phases.",
+      "D. The velocity of development."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz2_q7",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The Incremental Model differs from Waterfall because it:",
+    "options": [
+      "A. Eliminates documentation.",
+      "B. Allows partial delivery of working software.",
+      "C. Requires no upfront planning.",
+      "D. Does not use iterations."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q8",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "Predictive models tend to struggle when:",
+    "options": [
+      "A. Requirements are stable.",
+      "B. System risk is low.",
+      "C. Requirements change frequently.",
+      "D. Projects demand extensive documentation."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz2_q9",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "What is a primary strength of predictive models:",
+    "options": [
+      "A. High flexibility during development.",
+      "B. Early cost and schedule predictability.",
+      "C. Encouraging frequent requirement changes.",
+      "D. Avoiding all documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q10",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The Waterfall Model is commonly used in:",
+    "options": [
+      "A. Projects with frequent change.",
+      "B. Regulated industries needing strict documentation.",
+      "C. Startups building experimental prototypes.",
+      "D. Rapid innovation environments."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q11",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The Internal Revenue Service (IRS) modernization failure highlights that Waterfall:",
+    "options": [
+      "A. Handles changing requirements well.",
+      "B. Relying on early requirements can be risky.",
+      "C. Eliminates the need for testing.",
+      "D. Always completes on schedule."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q12",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "Predictive models are MOST suitable when:",
+    "options": [
+      "A. Stakeholders cannot define requirements.",
+      "B. The system must meet strict compliance standards.",
+      "C. The customer prefers high adaptability.",
+      "D. Requirements will evolve rapidly."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q13",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "A major disadvantage of predictive models is that they:",
+    "options": [
+      "A. Provide too much customer collaboration.",
+      "B. Lack flexibility for changing requirements.",
+      "C. Require too little documentation.",
+      "D. Rely heavily on working software early."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q14",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "In the Waterfall Model, testing occurs:",
+    "options": [
+      "A. Only after the implementation phase is complete.",
+      "B. Continuously throughout the project.",
+      "C. Before requirements gathering.",
+      "D. Before design is completed."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz2_q15",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The Incremental Model is beneficial because it:",
+    "options": [
+      "A. Delivers value earlier than a single final release.",
+      "B. Avoids all planning.",
+      "C. Requires no customer interaction.",
+      "D. Eliminates need for testing."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz2_q16",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The V-Model is preferred in domains where:",
+    "options": [
+      "A. Rapid prototyping is essential.",
+      "B. Safety and correctness are critical.",
+      "C. Frequent requirement changes occur.",
+      "D. Minimal documentation is acceptable."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q17",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The main assumption behind predictive models is that:",
+    "options": [
+      "A. Requirements will evolve organically.",
+      "B. Requirements can be fully known early.",
+      "C. Customers prefer flexible processes.",
+      "D. Teams want minimal structure."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q18",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "A negative outcome of rigid sequential phases is:",
+    "options": [
+      "A. Reduced clarity.",
+      "B. Increased adaptability.",
+      "C. Difficulty returning to earlier stages.",
+      "D. Better handling of change."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz2_q19",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "One key reason predictive models rely on documentation is to:",
+    "options": [
+      "A. Remove the need for communication.",
+      "B. Ensure traceability and compliance.",
+      "C. Make coding unnecessary.",
+      "D. Allow spontaneous changes."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q20",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "When using Waterfall, customers typically see the working product:",
+    "options": [
+      "A. Very early.",
+      "B. Only near the end.",
+      "C. After each daily iteration.",
+      "D. At the start of each sprint."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz2_q21",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "Predictive planning involves:",
+    "options": [
+      "A. Planning only small increments at a time.",
+      "B. Deferring planning until after coding begins.",
+      "C. Establishing detailed schedules early.",
+      "D. Adjusting plans continuously."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz2_q22",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "Which project is LEAST suited for predictive models:",
+    "options": [
+      "A. A startup app exploring uncertain features.",
+      "B. Hospital patient records system.",
+      "C. Banking compliance platform.",
+      "D. Government defense control software."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz2_q23",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The biggest challenge predictive models face is:",
+    "options": [
+      "A. Handling volatile requirements.",
+      "B. Creating documentation.",
+      "C. Managing test cycles.",
+      "D. Organizing teams."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz2_q24",
+    "week": "Week7",
+    "quiz": "Quiz2",
+    "question": "The core philosophy of predictive models is:",
+    "options": [
+      "A. Responding to change over following a plan.",
+      "B. Building working software before defining requirements.",
+      "C. Planning thoroughly before development begins.",
+      "D. Prioritizing collaboration over documentation."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q1",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Adaptive models are designed to:",
+    "options": [
+      "A. Prevent requirement changes.",
+      "B. Accommodate evolving requirements.",
+      "C. Replace communication with documentation.",
+      "D. Use no iterations."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q2",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "A key characteristic of adaptive processes is:",
+    "options": [
+      "A. Strict phase gating.",
+      "B. Detailed upfront planning.",
+      "C. Iterative and feedback-driven development.",
+      "D. Heavy documentation focus."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q3",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Which statement best describes the Product Backlog in Scrum:",
+    "options": [
+      "A. A living, prioritized list of everything needed in the product.",
+      "B. A fixed contract signed at project start.",
+      "C. A list of tasks for developers to complete daily.",
+      "D. A complete design document."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz3_q4",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Sprint Backlog is BEST described as:",
+    "options": [
+      "A. The set of Product Backlog items selected for the current sprint.",
+      "B. A list of all work in the entire project.",
+      "C. A document controlled only by the Product Owner.",
+      "D. A high-level requirement specification."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz3_q5",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Spiral Model primarily focuses on:",
+    "options": [
+      "A. Eliminating all project risks.",
+      "B. Risk-driven development cycles.",
+      "C. Minimizing customer involvement.",
+      "D. Rapid, unstructured delivery."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q6",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "RUP (Rational Unified Process) is best described as:",
+    "options": [
+      "A. A pure predictive model.",
+      "B. A purely adaptive model with no structure.",
+      "C. A structured yet iterative framework.",
+      "D. A model that eliminates documentation."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q7",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Agile was created because developers were frustrated with:",
+    "options": [
+      "A. Too much customer feedback.",
+      "B. Heavy, rigid, inefficient processes.",
+      "C. Insufficient documentation.",
+      "D. Lack of automated tools."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q8",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Agile Manifesto emphasizes:",
+    "options": [
+      "A. Following a fixed plan.",
+      "B. Maximizing documentation.",
+      "C. Individuals and interactions.",
+      "D. Minimizing customer collaboration."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q9",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Which Agile value focuses on prioritizing customer needs:",
+    "options": [
+      "A. Responding to change over following a plan.",
+      "B. Working software over comprehensive documentation.",
+      "C. Customer collaboration over contract negotiation.",
+      "D. Individuals and interactions over processes and tools."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q10",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "A key principle of Agile is:",
+    "options": [
+      "A. Delivering software only once at the end.",
+      "B. Avoiding iterative development.",
+      "C. Welcoming changing requirements.",
+      "D. Releasing no working software until the entire project is finished."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q11",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Scrum is best described as:",
+    "options": [
+      "A. A rigid sequential methodology.",
+      "B. A lightweight Agile framework.",
+      "C. A predictive project management tool.",
+      "D. A design-only technique."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q12",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Product Owner is primarily responsible for:",
+    "options": [
+      "A. Removing team obstacles.",
+      "B. Writing all code.",
+      "C. Managing and prioritizing the Product Backlog.",
+      "D. Conducting the Daily Scrum."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q13",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Scrum Master's core responsibility is to:",
+    "options": [
+      "A. Prioritize backlog items.",
+      "B. Facilitate Scrum practices and remove blockers.",
+      "C. Approve design decisions.",
+      "D. Write user stories."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q14",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Development Team in Scrum is:",
+    "options": [
+      "A. Self-managing and cross-functional.",
+      "B. Strictly controlled by the Scrum Master.",
+      "C. Not allowed to collaborate.",
+      "D. Forbidden from talking to the Product Owner."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week7_Quiz3_q15",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Each Sprint produces:",
+    "options": [
+      "A. A fully completed project.",
+      "B. A user manual.",
+      "C. A potentially shippable product increment.",
+      "D. A complete design document."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q16",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Daily Scrum is intended to:",
+    "options": [
+      "A. Report to the Scrum Master.",
+      "B. Identify progress and blockers.",
+      "C. Review the entire project.",
+      "D. Conduct testing activities."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q17",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Sprint Review focuses on:",
+    "options": [
+      "A. Reflecting on team performance.",
+      "B. Demonstrating the increment and gathering feedback.",
+      "C. Planning the next sprint.",
+      "D. Estimating user stories."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q18",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Sprint Retrospective focuses on:",
+    "options": [
+      "A. Showing the increment.",
+      "B. Reviewing the Product Backlog.",
+      "C. Identifying process improvements.",
+      "D. Finalizing the product release."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q19",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Kanban is best described as:",
+    "options": [
+      "A. A time-boxed Agile framework.",
+      "B. A continuous flow method visualizing work.",
+      "C. A predictive model.",
+      "D. A debugging technique."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q20",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Extreme Programming (XP) emphasizes:",
+    "options": [
+      "A. Heavy documentation.",
+      "B. Individual contributors working alone.",
+      "C. Technical excellence such as Test-Driven Development (TDD) and pair programming.",
+      "D. Waterfall-style delivery."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q21",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Lean Software Development focuses on:",
+    "options": [
+      "A. Adding extra steps to ensure safety.",
+      "B. Eliminating waste and delivering fast.",
+      "C. Avoiding customer involvement.",
+      "D. Maximizing documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q22",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "FDD (Feature-Driven Development) is especially suited for:",
+    "options": [
+      "A. Small, uncertain prototypes.",
+      "B. Very large, domain-rich systems.",
+      "C. Systems with no clear features.",
+      "D. Teams that avoid documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q23",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Scaled Agile Frameworks (e.g., Scaled Agile Framework (SAFe)) exist because:",
+    "options": [
+      "A. Agile cannot work in any organization.",
+      "B. Large enterprises need coordination across many teams.",
+      "C. Agile requires minimal planning.",
+      "D. Predictive models scale automatically."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q24",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Which scenario BEST suits Agile:",
+    "options": [
+      "A. Government defense system with strict compliance.",
+      "B. Building a medical device requiring formal approvals.",
+      "C. A startup building a new social media app.",
+      "D. Financial reporting software with fixed requirements."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q25",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Agile welcomes changing requirements because:",
+    "options": [
+      "A. It avoids planning.",
+      "B. Customers never know what they want.",
+      "C. Feedback-driven iterations improve product alignment.",
+      "D. Documentation is not important."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week7_Quiz3_q26",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The core unit of work in Scrum is:",
+    "options": [
+      "A. The requirement document.",
+      "B. The Sprint.",
+      "C. The Gantt chart.",
+      "D. The phase gate."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q27",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "A major advantage of Agile over predictive models is:",
+    "options": [
+      "A. It eliminates testing.",
+      "B. It adapts to change more easily.",
+      "C. It requires no planning.",
+      "D. It guarantees early cost accuracy."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q28",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "Scrum teams should be:",
+    "options": [
+      "A. Large with specialized roles.",
+      "B. Self-organizing with cross-functional skills.",
+      "C. Managed hierarchically with command-style control.",
+      "D. Focused mainly on documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q29",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "A Scrum Sprint is typically:",
+    "options": [
+      "A. A flexible time period that changes weekly.",
+      "B. A fixed-length iteration with clear goals.",
+      "C. A continuous flow of work.",
+      "D. A meeting with stakeholders."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week7_Quiz3_q30",
+    "week": "Week7",
+    "quiz": "Quiz3",
+    "question": "The Agile mindset is fundamentally about:",
+    "options": [
+      "A. Following strict rules.",
+      "B. Avoiding planning.",
+      "C. Embracing learning and change.",
+      "D. Reducing team collaboration."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week8_Quiz1_q1",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "When creating a persona to represent a product user, what is the primary purpose of including personal details like a name, age, and photograph?",
+    "options": [
+      "A. To ensure the development team can perform a background check on the user type.",
+      "B. To create a realistic character that helps the team empathize with the user (\"step into their shoes\").",
+      "C. To meet the legal requirements for user documentation.",
+      "D. To define the specific salary bracket for pricing the software."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q2",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "Which of the following is the most effective element to include in a persona description to help developers judge user interface (UI) complexity?",
+    "options": [
+      "A. The user's long-term life goals (e.g., \"wants to retire early\").",
+      "B. The user's educational background and technical skill level.",
+      "C. The user's favorite color scheme.",
+      "D. The user's manager's name."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q3",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "Why is it generally advised to avoid focusing on \"user goals\" (e.g., \"career progression\") when writing personas?",
+    "options": [
+      "A. Users never have goals when using software.",
+      "B. Goals are too broad and often do not directly relate to why a user needs a specific piece of software to get through their day.",
+      "C. Goals are always financial and irrelevant to functionality.",
+      "D. It is impossible to write a goal in less than three paragraphs."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q4",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "You are developing a new product and have very little data. You create \"proto-personas\" based on the team's best guesses. What is the limitation of this approach?",
+    "options": [
+      "A. They are too detailed to be useful.",
+      "B. They cannot be used to write scenarios.",
+      "C. They are not as accurate as those based on user research, though they still provide a shared team vision.",
+      "D. They require legal approval before use."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week8_Quiz1_q5",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "How many personas should you typically create to identify the key features of a system effectively?",
+    "options": [
+      "A. One for every potential user of the system.",
+      "B. At least 20 to cover every possible demographic.",
+      "C. A small number (e.g., up to 5) to avoid overlapping requirements and confusion.",
+      "D. Only one \"average\" persona."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week8_Quiz1_q6",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "Which of the following best describes the correct \"level of detail\" for a starting scenario?",
+    "options": [
+      "A. A strict, step-by-step list of every mouse click and keystroke.",
+      "B. A high-level narrative describing a user's problem and an imagined solution without technical specification.",
+      "C. A complete code-level specification of the feature.",
+      "D. A vague statement saying \"the user solves the problem\" with no description of how."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q7",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "When writing a scenario, why might you include specific technical details (like \"Log in with Google\") rather than a generic phrase (like \"User performs authentication\")?",
+    "options": [
+      "A. Because generic phrases can be confusing, while specific examples are often easier for users and developers to understand.",
+      "B. Because you are required to use Google products.",
+      "C. Because the code has already been written.",
+      "D. Because scenarios must always dictate the final implementation database."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week8_Quiz1_q8",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "What is the primary advantage of using a \"narrative\" style (natural language) for scenarios over a \"structured\" style (fields and flowcharts)?",
+    "options": [
+      "A. Narrative scenarios are machine-readable.",
+      "B. Narrative scenarios are accessible and understandable to non-technical users and stakeholders.",
+      "C. Structured scenarios are too short.",
+      "D. Narrative scenarios are legally binding contracts."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q9",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "Which action should you take to identify software features from a written scenario?",
+    "options": [
+      "A. Count the number of adjectives used.",
+      "B. Highlight the \"active verbs\" (actions) in the text to see what the user is doing (e.g., \"upload,\" \"share\").",
+      "C. Rewrite the scenario in a different language.",
+      "D. Remove all references to the persona."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q10",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "A scenario describes a teacher using a tool to organize a class trip. What represents the \"Problem\" element of this scenario?",
+    "options": [
+      "A. The teacher logs in.",
+      "B. The teacher wants to share photos but needs to ensure student privacy and copyright compliance.",
+      "C. The teacher has a degree in History.",
+      "D. The system sends an email."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q11",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "Scenarios are described as \"tools for thinking.\" What does this imply about their completeness?",
+    "options": [
+      "A. They must cover every single edge case and error state.",
+      "B. They must be perfect before any coding begins.",
+      "C. They do not have to be complete or consistent; their job is to stimulate design creativity.",
+      "D. They replace the need for testing."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "Week8_Quiz1_q12",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "Which of the following follows the standard format of a User Story?",
+    "options": [
+      "A. \"The system shall allow the user to print documents.\"",
+      "B. \"As a <role>, I want to <do something>, so that <reason>.\"",
+      "C. \"Clicking the blue button saves the file to the cloud.\"",
+      "D. \"Jack, aged 32, needs a way to save time.\""
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q13",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "What is the main purpose of the \"So that...\" clause (the rationale) in a User Story?",
+    "options": [
+      "A. To increase the word count of the documentation.",
+      "B. To help developers understand why a feature is needed, potentially triggering alternative ideas for implementation.",
+      "C. To tell the user how to perform the task.",
+      "D. To assign the task to a specific developer."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q14",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "You have a User Story that says: \"As a system manager, I need to back up the entire system and restore files.\" This story is very complex and will take weeks to build. What is this called?",
+    "options": [
+      "A. A Bug.",
+      "B. An Epic.",
+      "C. A Persona.",
+      "D. A Scenario."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q15",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "Why should you generally avoid writing \"negative\" user stories (e.g., \"As a user, I don't want...\") for a product backlog?",
+    "options": [
+      "A. It is impossible to write system tests that demonstrate a negative (that something didn't happen).",
+      "B. Agile methodologies forbid negative language.",
+      "C. Developers prefer positive reinforcement.",
+      "D. Negative stories are too short."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week8_Quiz1_q16",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "How do User Stories differ from Scenarios regarding \"context\"?",
+    "options": [
+      "A. Stories provide more context than scenarios.",
+      "B. Scenarios provide rich context about normal work and goals, while stories are finer-grain statements of a single need.",
+      "C. Stories and scenarios are identical in context.",
+      "D. Stories describe the user's background; scenarios describe the system's code."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q17",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "What is the correct chronological flow when using these techniques to design a product?",
+    "options": [
+      "A. Features -> Personas -> Scenarios -> Stories",
+      "B. Personas -> Scenarios -> Stories -> Features",
+      "C. Stories -> Personas -> Features -> Scenarios",
+      "D. Scenarios -> Features -> Personas -> Stories"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q18",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "You are analyzing a scenario where a teacher \"creates a group web page.\" Which specific artifact would you write to help plan the implementation of this specific action?",
+    "options": [
+      "A. A new Persona for the web page.",
+      "B. A User Story (e.g., \"As a teacher, I want to create a web page...\").",
+      "C. A marketing plan.",
+      "D. A new Scenario about the web page."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "Week8_Quiz1_q19",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "When identifying features from scenarios, you notice a user needs to \"log in\" in three different scenarios. What feature design principle suggests you should create one single \"Authentication\" feature rather than three separate ones?",
+    "options": [
+      "A. Coherence (The feature should be linked to a single item of functionality).",
+      "B. Novelty (The feature should be new).",
+      "C. Complexity (The feature should be difficult).",
+      "D. Independence (The feature should not work with others)."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "Week8_Quiz1_q20",
+    "week": "Week8",
+    "quiz": "Quiz1",
+    "question": "If you are writing a User Story based on a scenario where a user needs to ensure their data isn't shared, how should you rephrase the negative constraint \"I don't want my data shared\"?",
+    "options": [
+      "A. \"As a user, I want to control the information transmitted to external servers so I can ensure privacy.\"",
+      "B. \"As a user, I want to ban all data sharing.\"",
+      "C. \"As a user, I don't want the system to work.\"",
+      "D. \"As a user, I want to delete the application.\""
+    ],
+    "correctAnswer": "A"
+  }
+]

@@ -1,0 +1,83 @@
+1) What is the core idea behind test automation?
+A. Tests are written as manual scripts for a human to follow.
+B. Only the user interface (UI) parts of an application are tested.
+C. Tests are written as executable code that can run without manual intervention.
+D. The goal is to prove that the software has no bugs at all.
+Answer: C
+
+2) The "Arrange-Action-Assert" pattern is a common structure for automated tests. What happens during the "Assert" step?
+A. Test parameters and the test environment are set up.
+B. The code unit being tested is called with specific inputs.
+C. The test checks if the actual result from the code matches the expected outcome.
+D. The results of the test are reported to the development team.
+Answer: C
+
+3) What is the definition of regression testing?
+A. The process of writing new tests for a newly developed feature.
+B. The process of re-running previous tests after a change to ensure nothing has broken.
+C. The process of manually testing the software just before a major release.
+D. The process of removing old, outdated tests from the test suite.
+Answer: B
+
+4) What is the most significant advantage of having an automated test suite for regression testing?
+A. It eliminates the need for any manual testing whatsoever.
+B. It guarantees that no new bugs will ever be introduced into the code.
+C. It allows thousands of tests to be run in seconds, giving teams the confidence to make changes safely and quickly.
+D. It automatically generates new test cases based on user behavior.
+Answer: C
+
+5) What is the main principle of the Test Pyramid model proposed by Mike Cohn?
+A. To guide the structure of an automated test suite, emphasizing a large number of fast unit tests at the base.
+B. To ensure that every developer writes the same number of tests.
+C. To mandate that 100% of testing must be automated.
+D. To focus testing efforts primarily on the user interface because it's what the customer sees.
+Answer: A
+
+6) According to the Test Pyramid, why should you have significantly more unit tests than system/user interface (UI) tests?
+A. Unit tests are more interesting for developers to write.
+B. System tests are unable to find important bugs.
+C. Unit tests are much faster, more stable, and pinpoint problems more precisely than higher-level tests.
+D. UI tests can only be performed manually and cannot be automated.
+Answer: C
+
+7) Which statement best describes Test-Driven Development (TDD)?
+A. A process where you write production code first and then write tests for it later.
+B. A process where you write an automated test before you write the production code needed to make it pass.
+C. A methodology where a separate testing team is solely responsible for all testing activities.
+D. A technique focused only on testing the security aspects of an application.
+Answer: B
+
+8) What is the correct sequence of the Test-Driven Development (TDD) cycle?
+A. Green → Red → Refactor
+B. Red → Refactor → Green
+C. Refactor → Red → Green
+D. Red → Green → Refactor
+Answer: D
+
+9) In the Test-Driven Development (TDD) cycle, what is the primary purpose of the "Red" phase?
+A. To write the simplest possible production code.
+B. To clean up and improve the code that was just written.
+C. To write a small, specific test that fails because the required functionality does not yet exist.
+D. To run all existing tests to make sure they are still passing.
+Answer: C
+
+10) After a test passes in the "Green" phase of Test-Driven Development (TDD), what is the goal of the "Refactor" phase?
+A. To write another failing test for the next piece of functionality.
+B. To deploy the code immediately to production.
+C. To clean up and improve the code's design without changing its behavior, confident that the tests will catch any regressions.
+D. To ask another developer to review the code.
+Answer: C
+
+11) Which of the following is a key benefit of practicing Test-Driven Development (TDD)?
+A. It completely eliminates the need for code reviews.
+B. It guarantees that the software will be 100% bug-free.
+C. The resulting tests act as a form of executable documentation that is always up-to-date with the code.
+D. It is the fastest way to write code, especially for projects with unclear requirements.
+Answer: C
+
+12) According to the course materials, what is a potential challenge or downside of Test-Driven Development (TDD)?
+A. It results in having too few tests to cover the codebase.
+B. It can discourage developers from making radical refactoring changes if it means rewriting many tests.
+C. It simplifies debugging to the point where developers no longer learn valuable skills.
+D. It only works for user interface testing and cannot be used for backend logic.
+Answer: B
