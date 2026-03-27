@@ -17,7 +17,7 @@ A. Usability
 B. Security
 C. Scalability
 D. Maintainability
-Answer: A
+Answer: C
 
 4) Why is it critically important to get the architecture right early in the project?
 A. Because good architecture is cheap and easy to implement.
