@@ -3,7 +3,7 @@ A. To choose the specific programming language and database.
 B. To document the system's high-level structure and component interactions.
 C. To write the first modules of code for the application.
 D. To finalize the user interface (UI) design and branding.
-Answer: A
+Answer: B
 
 2) A software system's quality attributes (like performance, reliability, and security) are also known as:
 A. Functional requirements
